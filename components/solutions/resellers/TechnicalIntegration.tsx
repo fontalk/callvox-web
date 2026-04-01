@@ -51,8 +51,8 @@ export default function TechnicalIntegration() {
                   animate={isInView ? 'visible' : 'hidden'}
                   className="border-l-2 border-cyan-DEFAULT pl-4 py-2"
                 >
-                  <div className="text-sm font-semibold text-cyan-DEFAULT-600">{spec.label}</div>
-                  <div className="text-navy-200 text-sm">{spec.value}</div>
+                  <div className="text-sm font-semibold text-cyan-DEFAULT">{spec.label}</div>
+                  <div className="text-navy-600 text-sm">{spec.value}</div>
                 </motion.div>
               ))}
             </div>

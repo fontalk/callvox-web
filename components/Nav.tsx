@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { Logo } from './Logo'
 import { Button } from './callvox-ui/Button'
@@ -12,7 +12,6 @@ import {
   PhoneIncoming,
   Buildings,
   Broadcast,
-  Users,
   ArrowUpRight,
   List,
   X,
@@ -21,18 +20,18 @@ import {
 } from '@phosphor-icons/react'
 
 const products = [
-  { icon: Phone,         name: 'Wholesale Voice',    desc: 'Termination & origination across 500+ routes', href: '/products/voice' },
-  { icon: ChatDots,      name: 'SMS / Messaging',    desc: 'A2P SMS, SMPP & REST delivery at scale',        href: '/products/sms' },
-  { icon: Lightning,     name: 'Airtime Top-Ups',    desc: 'International mobile recharge via API',          href: '/products/airtime' },
-  { icon: SimCard,       name: 'eSIM',               desc: 'Wholesale eSIM provisioning (SGP.32)',           href: '/products/esim' },
-  { icon: PhoneIncoming, name: 'DIDs / Numbers',     desc: 'Virtual numbers in 90+ countries',              href: '/products/dids' },
+  { icon: Phone,         name: 'Wholesale Voice',  desc: 'Termination & origination across 500+ routes', href: '/products/voice' },
+  { icon: ChatDots,      name: 'SMS / Messaging',  desc: 'A2P SMS, SMPP & REST delivery at scale',        href: '/products/sms' },
+  { icon: Lightning,     name: 'Airtime Top-Ups',  desc: 'International mobile recharge via API',          href: '/products/airtime' },
+  { icon: SimCard,       name: 'eSIM',             desc: 'Wholesale eSIM provisioning (SGP.32)',           href: '/products/esim' },
+  { icon: PhoneIncoming, name: 'DIDs / Numbers',   desc: 'Virtual numbers in 90+ countries',              href: '/products/dids' },
 ]
 
 const solutions = [
-  { icon: Broadcast, name: 'For Carriers',    href: '/solutions/carriers' },
-  { icon: SimCard,   name: 'For MVNOs',       href: '/solutions/mvnos' },
-  { icon: ArrowUpRight, name: 'For Resellers', href: '/solutions/resellers' },
-  { icon: Buildings, name: 'For Enterprises', href: '/solutions/enterprises' },
+  { icon: Broadcast,    name: 'For Carriers',    href: '/solutions/carriers' },
+  { icon: SimCard,      name: 'For MVNOs',        href: '/solutions/mvnos' },
+  { icon: ArrowUpRight, name: 'For Resellers',    href: '/solutions/resellers' },
+  { icon: Buildings,    name: 'For Enterprises',  href: '/solutions/enterprises' },
 ]
 
 const simpleLinks = [
@@ -43,32 +42,49 @@ const simpleLinks = [
 ]
 
 export default function Nav() {
-  const [mobileOpen, setMobileOpen]         = useState(false)
-  const [mobileProducts, setMobileProducts] = useState(false)
+  const [mobileOpen, setMobileOpen]           = useState(false)
+  const [mobileProducts, setMobileProducts]   = useState(false)
   const [mobileSolutions, setMobileSolutions] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [activeDropdown, setActiveDropdown]   = useState<string | null>(null)
+  const navRef = useRef<HTMLElement>(null)
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setActiveDropdown(null)
+        setMobileOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  function toggleDropdown(name: string) {
+    setActiveDropdown(prev => prev === name ? null : name)
+  }
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-navy-100 h-[68px]">
+    <header ref={navRef} className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-navy-100 h-[68px]">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-6">
 
-        {/* ── Logo ── */}
-        <Link href="/" aria-label="Callvox home">
+        {/* Logo */}
+        <Link href="/" aria-label="Callvox home" onClick={() => setActiveDropdown(null)}>
           <Logo className="w-[136px] h-auto flex-shrink-0" />
         </Link>
 
-        {/* ── Desktop links ── */}
+        {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-0.5 flex-1">
 
-          {/* Products — mega-menu */}
-          <div
-            className="relative"
-            onMouseEnter={() => setActiveDropdown('Products')}
-            onMouseLeave={() => setActiveDropdown(null)}
-          >
-            <button className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1">
+          {/* Products mega-menu — click to open, hover to keep open */}
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown('Products')}
+              className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1"
+              aria-expanded={activeDropdown === 'Products'}
+            >
               Products
-              <CaretDown weight="bold" className={`w-3 h-3 transition-transform ${activeDropdown === 'Products' ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-200 ${activeDropdown === 'Products' ? 'rotate-180' : ''}`} />
             </button>
 
             {activeDropdown === 'Products' && (
@@ -81,6 +97,7 @@ export default function Nav() {
                       <Link
                         key={p.name}
                         href={p.href}
+                        onClick={() => setActiveDropdown(null)}
                         className="flex items-start gap-4 px-3 py-3 rounded-xl hover:bg-navy-50 transition-colors group"
                       >
                         <span className="mt-0.5 w-8 h-8 rounded-lg bg-cyan-DEFAULT/10 flex items-center justify-center flex-shrink-0">
@@ -96,7 +113,11 @@ export default function Nav() {
                 </div>
                 <div className="mt-4 pt-4 border-t border-navy-100 flex items-center justify-between">
                   <span className="text-xs text-navy-400">One API. All five products.</span>
-                  <Link href="/developers" className="text-xs font-semibold text-cyan-DEFAULT flex items-center gap-1 hover:gap-2 transition-all">
+                  <Link
+                    href="/developers"
+                    onClick={() => setActiveDropdown(null)}
+                    className="text-xs font-semibold text-cyan-DEFAULT flex items-center gap-1 hover:gap-2 transition-all"
+                  >
                     View API docs <ArrowRight size={14} weight="bold" />
                   </Link>
                 </div>
@@ -104,15 +125,15 @@ export default function Nav() {
             )}
           </div>
 
-          {/* Solutions — compact dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setActiveDropdown('Solutions')}
-            onMouseLeave={() => setActiveDropdown(null)}
-          >
-            <button className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1">
+          {/* Solutions dropdown — click to open */}
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown('Solutions')}
+              className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1"
+              aria-expanded={activeDropdown === 'Solutions'}
+            >
               Solutions
-              <CaretDown weight="bold" className={`w-3 h-3 transition-transform ${activeDropdown === 'Solutions' ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-200 ${activeDropdown === 'Solutions' ? 'rotate-180' : ''}`} />
             </button>
 
             {activeDropdown === 'Solutions' && (
@@ -123,6 +144,7 @@ export default function Nav() {
                     <Link
                       key={s.name}
                       href={s.href}
+                      onClick={() => setActiveDropdown(null)}
                       className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-navy-700 hover:bg-navy-50 hover:text-cyan-DEFAULT transition-colors group"
                     >
                       <Icon size={16} weight="duotone" className="text-navy-400 group-hover:text-cyan-DEFAULT transition-colors flex-shrink-0" />
@@ -134,11 +156,12 @@ export default function Nav() {
             )}
           </div>
 
-          {/* Simple links */}
+          {/* Simple nav links */}
           {simpleLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
+              onClick={() => setActiveDropdown(null)}
               className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors"
             >
               {link.name}
@@ -146,34 +169,34 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* ── Desktop CTAs ── */}
+        {/* Desktop CTAs */}
         <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
           <Button variant="ghost" size="md">Login</Button>
           <Button variant="primary" size="md">Get a Quote</Button>
         </div>
 
-        {/* ── Mobile hamburger ── */}
+        {/* Mobile hamburger */}
         <button
           className="lg:hidden p-2 text-navy-DEFAULT rounded-md"
-          onClick={() => setMobileOpen(!mobileOpen)}
+          onClick={() => setMobileOpen(prev => !prev)}
           aria-label="Toggle navigation menu"
         >
           {mobileOpen ? <X weight="bold" size={24} /> : <List weight="bold" size={24} />}
         </button>
       </nav>
 
-      {/* ── Mobile menu ── */}
+      {/* Mobile menu */}
       {mobileOpen && (
         <div className="lg:hidden absolute top-[68px] left-0 right-0 bg-white border-b border-navy-100 shadow-lg overflow-y-auto max-h-[calc(100vh-68px)]">
           <div className="px-4 py-6 space-y-1">
 
             {/* Products accordion */}
             <button
-              onClick={() => setMobileProducts(!mobileProducts)}
+              onClick={() => setMobileProducts(prev => !prev)}
               className="w-full flex items-center justify-between px-4 py-3 text-navy-800 font-medium rounded-lg hover:bg-navy-50"
             >
               Products
-              <CaretDown weight="bold" className={`w-4 h-4 transition-transform ${mobileProducts ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-4 h-4 transition-transform duration-200 ${mobileProducts ? 'rotate-180' : ''}`} />
             </button>
             {mobileProducts && (
               <div className="pl-4 space-y-1 pb-2">
@@ -196,11 +219,11 @@ export default function Nav() {
 
             {/* Solutions accordion */}
             <button
-              onClick={() => setMobileSolutions(!mobileSolutions)}
+              onClick={() => setMobileSolutions(prev => !prev)}
               className="w-full flex items-center justify-between px-4 py-3 text-navy-800 font-medium rounded-lg hover:bg-navy-50"
             >
               Solutions
-              <CaretDown weight="bold" className={`w-4 h-4 transition-transform ${mobileSolutions ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-4 h-4 transition-transform duration-200 ${mobileSolutions ? 'rotate-180' : ''}`} />
             </button>
             {mobileSolutions && (
               <div className="pl-4 space-y-1 pb-2">

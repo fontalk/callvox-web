@@ -6,6 +6,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    turbo: {
+      memoryLimit: 512,
+    },
+  },
 }
 
 export default nextConfig

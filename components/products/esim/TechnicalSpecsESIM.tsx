@@ -74,7 +74,7 @@ export function TechnicalSpecsESIM() {
               <p className="text-sm text-navy-100 leading-relaxed mb-6">
                 The GSMA Security Accreditation Scheme for Subscription Management is the mandatory certification for operating SM-DP+ platforms. Without it, eSIM provisioning is not possible at commercial scale.
               </p>
-              <a href="#" className="text-cyan-DEFAULT text-sm font-semibold hover:text-cyan-DEFAULT-200 transition-colors">
+              <a href="#" className="text-cyan-DEFAULT text-sm font-semibold hover:opacity-80 transition-opacity">
                 certification details →
               </a>
             </div>

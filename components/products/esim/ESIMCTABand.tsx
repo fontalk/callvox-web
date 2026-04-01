@@ -21,7 +21,7 @@ export function ESIMCTABand() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 bg-cyan-DEFAULT text-navy-DEFAULT font-semibold rounded-lg hover:bg-cyan-DEFAULT-600 transition-colors">
+          <button className="px-6 py-3 bg-cyan-DEFAULT text-navy-DEFAULT font-semibold rounded-lg hover:opacity-90 transition-opacity">
             Talk to an eSIM specialist →
           </button>
           <button className="px-6 py-3 border-2 border-navy-DEFAULT text-navy-DEFAULT font-semibold rounded-lg hover:bg-navy-50 transition-colors">

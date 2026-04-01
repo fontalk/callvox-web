@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/callvox-ui/Button';
 
@@ -25,12 +24,11 @@ export default function MVNOsCTABand() {
             We work with MVNOs at every stage — from pre-launch planning to established operators optimising costs. No pitch deck required for the first call.
           </p>
 
-          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               variant="primary"
               size="lg"
-              className="bg-cyan-DEFAULT text-white hover:bg-cyan-DEFAULT-600"
+              className="bg-cyan-DEFAULT text-white hover:opacity-90"
             >
               Talk to an MVNO specialist →
             </Button>

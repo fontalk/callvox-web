@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/callvox-ui/Button';
 
@@ -17,35 +16,29 @@ export default function MVNOsHero() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          {/* Breadcrumb */}
           <div className="mb-6 text-sm text-navy-200 font-medium">
             Solutions → For MVNOs
           </div>
 
-          {/* Eyebrow */}
           <div className="mb-6 flex justify-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-DEFAULT/20 border border-cyan-DEFAULT/50">
               <span className="text-xs font-bold uppercase tracking-wider text-cyan-DEFAULT">For Mobile Virtual Network Operators</span>
             </div>
           </div>
 
-          {/* Headline */}
           <h1 className="text-white font-bold mb-6" style={{ fontSize: 'clamp(36px, 5vw, 52px)' }}>
             Launch faster. Scale without lock-in.
           </h1>
 
-          {/* Sub */}
           <p className="text-navy-200 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
             Everything an MVNO needs in one wholesale relationship — voice termination, A2P messaging, eSIM provisioning, airtime, and virtual numbers. Cloud-native APIs. No long-term commitment required to start.
           </p>
 
-          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               variant="primary"
