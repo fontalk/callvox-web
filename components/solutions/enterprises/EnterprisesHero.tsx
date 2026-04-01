@@ -16,7 +16,7 @@ export default function EnterprisesHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
+          className="text-center"
         >
           <div className="flex justify-center mb-6">
             <span className="text-sm font-semibold text-navy-400">
@@ -34,7 +34,7 @@ export default function EnterprisesHero() {
             Enterprise-grade voice and numbers. Without enterprise procurement cycles.
           </h1>
 
-          <p className="text-navy-200 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-navy-200 text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
             SIP trunking, virtual numbers, and HD voice for businesses running on legacy PSTN or fragmented UCaaS providers. 40–70% cost reduction. 24/7 support. ISO 27001 certified.
           </p>
 

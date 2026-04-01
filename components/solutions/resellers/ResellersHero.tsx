@@ -52,7 +52,7 @@ export default function ResellersHero() {
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
-          className="text-navy-200 text-lg max-w-2xl mb-8"
+          className="text-navy-200 text-lg max-w-3xl mx-auto mb-8"
         >
           Competitive wholesale rates across voice, SMS, airtime, eSIM and DIDs. White-label portal. Multi-tenant billing. Automated provisioning. Everything you need to resell at scale.
         </motion.p>

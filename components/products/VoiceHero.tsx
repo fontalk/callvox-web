@@ -46,7 +46,7 @@ export function VoiceHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight max-w-2xl"
+              className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight"
             >
               Premium CLI routes to every market that matters.
             </motion.h1>

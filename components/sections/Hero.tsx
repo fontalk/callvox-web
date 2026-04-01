@@ -50,7 +50,6 @@ export function Hero() {
           initial="hidden"
           animate="visible"
           transition={{ staggerChildren: 0.08 }}
-          className="max-w-2xl"
         >
           {/* Eyebrow */}
           <motion.div variants={fadeUp} transition={{ duration: 0.5, ease: 'easeOut' }}>
@@ -72,7 +71,7 @@ export function Hero() {
           <motion.p 
             variants={fadeUp} 
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="mt-6 text-xl text-navy-600 leading-relaxed max-w-xl"
+            className="mt-6 text-xl text-navy-600 leading-relaxed max-w-2xl"
           >
             Wholesale voice, messaging, airtime, eSIM & DIDs — unified
             for carriers, MVNOs & resellers in the world&apos;s fastest-growing markets.

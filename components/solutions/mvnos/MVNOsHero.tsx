@@ -35,7 +35,7 @@ export default function MVNOsHero() {
             Launch faster. Scale without lock-in.
           </h1>
 
-          <p className="text-navy-200 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-navy-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Everything an MVNO needs in one wholesale relationship — voice termination, A2P messaging, eSIM provisioning, airtime, and virtual numbers. Cloud-native APIs. No long-term commitment required to start.
           </p>
 

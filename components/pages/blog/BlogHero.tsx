@@ -11,7 +11,7 @@ export default function BlogHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
+          className="text-center"
         >
           <div className="flex justify-center mb-6">
             <span className="inline-block px-4 py-2 rounded-full bg-cyan-DEFAULT/20 border border-cyan-DEFAULT/40 text-cyan-DEFAULT text-xs font-semibold uppercase tracking-wider">
@@ -23,7 +23,7 @@ export default function BlogHero() {
             Intelligence for wholesale telecom operators.
           </h1>
 
-          <p className="text-navy-600 text-lg md:text-xl leading-relaxed mb-10">
+          <p className="text-navy-600 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
             Market analysis, compliance guides, regulatory updates, and technical primers — written for carriers, MVNOs, and resellers.
           </p>
 

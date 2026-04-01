@@ -18,13 +18,13 @@ export default function CoverageHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto text-center"
+          className="text-center"
         >
           <h1 className="text-white font-bold mb-6" style={{ fontSize: '48px', lineHeight: 1.2 }}>
             Global coverage. Emerging-market depth.
           </h1>
 
-          <p className="text-navy-200 text-lg leading-relaxed mb-12">
+          <p className="text-navy-200 text-lg leading-relaxed mb-12 max-w-3xl mx-auto">
             500+ voice routes, 800+ airtime operators, DIDs in 90+ countries. Built for the corridors that matter most.
           </p>
 

@@ -31,7 +31,7 @@ export default function CarriersHero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight text-balance max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight text-balance">
             Carrier-grade infrastructure. Carrier-grade relationships.
           </h1>
 

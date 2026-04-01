@@ -13,13 +13,13 @@ export default function PricingHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto"
+          className="text-center"
         >
           <h1 className="text-navy-DEFAULT font-bold text-5xl md:text-6xl mb-6">
             Transparent pricing. No surprises.
           </h1>
 
-          <p className="text-navy-600 text-lg md:text-xl mb-12 leading-relaxed">
+          <p className="text-navy-600 text-lg md:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
             Wholesale per-unit pricing across all five services. Volume discounts apply automatically. No setup fees on any product.
           </p>
 
