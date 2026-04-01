@@ -1,7 +1,4 @@
-'use client';
-
 import { Metadata } from 'next';
-import { useEffect } from 'react';
 import Nav from '@/components/Nav';
 import { Footer } from '@/components/sections/Footer';
 import SMSHero from '@/components/products/sms/SMSHero';
@@ -25,10 +22,6 @@ export const metadata: Metadata = {
 };
 
 export default function SMSPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <main className="min-h-screen flex flex-col">
       <Nav />

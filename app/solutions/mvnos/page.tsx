@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import { Footer } from '@/components/sections/Footer';
