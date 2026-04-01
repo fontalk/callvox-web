@@ -11,15 +11,15 @@ export function Logo({ className, reversed = false }: LogoProps) {
   return (
     <div className={className}>
       <Image
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Callvox_Logo_transbg-Sl48Jcsp1HCNUZws5X8aOSTHHKTYEq.png"
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Callvox_Logo_small-TlBNvrQx6nx3HXswnZHOFPpZFmhiXF.png"
         alt="Callvox"
-        width={180}
-        height={40}
+        width={160}
+        height={32}
         priority
         style={{
           width: '100%',
           height: 'auto',
-          maxWidth: '180px',
+          maxWidth: '160px',
         }}
       />
     </div>
