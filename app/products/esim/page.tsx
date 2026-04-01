@@ -1,5 +1,6 @@
 'use client';
 
+import { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { ESIMHero } from '@/components/products/esim/ESIMHero';
@@ -9,6 +10,18 @@ import { TechnicalArchitecture } from '@/components/products/esim/TechnicalArchi
 import { TechnicalSpecsESIM } from '@/components/products/esim/TechnicalSpecsESIM';
 import { BusinessModels } from '@/components/products/esim/BusinessModels';
 import { ESIMCTABand } from '@/components/products/esim/ESIMCTABand';
+
+export const metadata: Metadata = {
+  title: 'Wholesale eSIM Provisioning',
+  description:
+    'GSMA SGP.22 and SGP.32 certified eSIM infrastructure. Over-the-air profile delivery for MVNOs, travel operators and enterprise IoT.',
+  openGraph: {
+    title: 'Wholesale eSIM Provisioning | Callvox',
+    description:
+      'GSMA SGP.22 and SGP.32 certified eSIM infrastructure. Over-the-air profile delivery for MVNOs and enterprises.',
+    type: 'website',
+  },
+};
 
 export default function ESIMPage() {
   return (

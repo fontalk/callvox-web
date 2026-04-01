@@ -10,11 +10,13 @@ import { CTABand } from '@/components/products/CTABand';
 import { Footer } from '@/components/sections/Footer';
 
 export const metadata: Metadata = {
-  title: 'Wholesale Voice Routes | Callvox',
-  description: '500+ direct voice routes across Africa, Latin America, South Asia & the Middle East. Premium CLI delivery with 99.99% ASR uptime.',
+  title: 'Wholesale Voice Termination',
+  description:
+    'Premium CLI voice routes across 500+ direct interconnects. Africa, LatAm, South Asia & MENA. 99.99% ASR uptime. STIR/SHAKEN compliant.',
   openGraph: {
-    title: 'Wholesale Voice Routes | Callvox',
-    description: '500+ direct voice routes across Africa, Latin America, South Asia & the Middle East.',
+    title: 'Wholesale Voice Termination | Callvox',
+    description:
+      'Premium CLI voice routes across 500+ direct interconnects. Africa, LatAm, South Asia & MENA. 99.99% ASR uptime.',
     type: 'website',
   },
 };
