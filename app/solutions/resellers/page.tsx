@@ -1,4 +1,4 @@
-import { Nav } from '@/components/Nav';
+import Nav from '@/components/Nav';
 import { Footer } from '@/components/sections/Footer';
 import ResellersHero from '@/components/solutions/resellers/ResellersHero';
 import ResellerAdvantage from '@/components/solutions/resellers/ResellerAdvantage';

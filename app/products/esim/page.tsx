@@ -1,6 +1,6 @@
 'use client';
 
-import { Nav } from '@/components/Nav';
+import Nav from '@/components/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { ESIMHero } from '@/components/products/esim/ESIMHero';
 import { MarketContextESIM } from '@/components/products/esim/MarketContextESIM';

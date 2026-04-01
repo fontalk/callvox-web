@@ -1,4 +1,4 @@
-import { Nav } from '@/components/Nav'
+import Nav from '@/components/Nav'
 import { Hero } from '@/components/sections/Hero'
 import { LogoBar } from '@/components/sections/LogoBar'
 import { ProductGrid } from '@/components/sections/ProductGrid'
