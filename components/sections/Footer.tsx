@@ -1,20 +1,38 @@
 'use client'
 
+import Link from 'next/link'
 import { Logo } from '@/components/Logo'
 import { LinkedinLogo, XLogo } from '@phosphor-icons/react'
 
 const footerLinks = {
   products: {
     title: 'Products',
-    links: ['Voice', 'SMS / Messaging', 'Airtime Top-Ups', 'eSIM', 'DIDs / Numbers'],
+    links: [
+      { label: 'Voice', href: '/products/voice' },
+      { label: 'SMS / Messaging', href: '/products/sms' },
+      { label: 'Airtime Top-Ups', href: '/products/airtime' },
+      { label: 'eSIM', href: '/products/esim' },
+      { label: 'DIDs / Numbers', href: '/products/dids' },
+    ],
   },
   solutions: {
     title: 'Solutions',
-    links: ['For Carriers', 'For MVNOs', 'For Resellers', 'For Enterprises'],
+    links: [
+      { label: 'For Carriers', href: '/solutions/carriers' },
+      { label: 'For MVNOs', href: '/solutions/mvnos' },
+      { label: 'For Resellers', href: '/solutions/resellers' },
+      { label: 'For Enterprises', href: '/solutions/enterprises' },
+    ],
   },
   company: {
     title: 'Company',
-    links: ['About', 'Network', 'Compliance', 'Security', 'Pricing', 'Developers', 'Blog', 'Status'],
+    links: [
+      { label: 'About', href: '/about' },
+      { label: 'Coverage', href: '/coverage' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Developers', href: '/developers' },
+      { label: 'Resources', href: '/resources' },
+    ],
   },
 }
 
@@ -25,7 +43,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div>
-            <Logo className="w-[140px] h-auto" reversed />
+            <Link href="/">
+              <Logo className="w-[140px] h-auto" reversed />
+            </Link>
             <p className="text-sm text-navy-400 mt-4 max-w-xs leading-relaxed">
               The unified wholesale platform for the world&apos;s fastest-growing markets.
             </p>
@@ -40,11 +60,11 @@ export function Footer() {
               {footerLinks.products.title}
             </h4>
             <ul className="space-y-3">
-              {footerLinks.products.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-sm text-navy-200 hover:text-white transition-colors">
-                    {link}
-                  </a>
+              {footerLinks.products.links.map(({ label, href }) => (
+                <li key={label}>
+                  <Link href={href} className="text-sm text-navy-200 hover:text-white transition-colors">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -56,11 +76,11 @@ export function Footer() {
               {footerLinks.solutions.title}
             </h4>
             <ul className="space-y-3">
-              {footerLinks.solutions.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-sm text-navy-200 hover:text-white transition-colors">
-                    {link}
-                  </a>
+              {footerLinks.solutions.links.map(({ label, href }) => (
+                <li key={label}>
+                  <Link href={href} className="text-sm text-navy-200 hover:text-white transition-colors">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -72,11 +92,11 @@ export function Footer() {
               {footerLinks.company.title}
             </h4>
             <ul className="space-y-3">
-              {footerLinks.company.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-sm text-navy-200 hover:text-white transition-colors">
-                    {link}
-                  </a>
+              {footerLinks.company.links.map(({ label, href }) => (
+                <li key={label}>
+                  <Link href={href} className="text-sm text-navy-200 hover:text-white transition-colors">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -89,10 +109,10 @@ export function Footer() {
             ISO 27001 · SOC 2 Type II · STIR/SHAKEN · GDPR
           </div>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-navy-400 hover:text-white transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com/company/callvox" target="_blank" rel="noopener noreferrer" className="text-navy-400 hover:text-white transition-colors" aria-label="LinkedIn">
               <LinkedinLogo weight="fill" className="w-5 h-5" />
             </a>
-            <a href="#" className="text-navy-400 hover:text-white transition-colors" aria-label="X (Twitter)">
+            <a href="https://x.com/callvoxnet" target="_blank" rel="noopener noreferrer" className="text-navy-400 hover:text-white transition-colors" aria-label="X (Twitter)">
               <XLogo weight="fill" className="w-5 h-5" />
             </a>
           </div>

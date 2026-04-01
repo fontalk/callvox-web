@@ -16,7 +16,7 @@ export async function GET() {
             alignItems: 'flex-start',
             justifyContent: 'center',
             padding: '80px',
-            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            fontFamily: 'system-ui, -apple-system, sans-serif',
             position: 'relative',
           }}
         >
@@ -25,10 +25,10 @@ export async function GET() {
             style={{
               color: '#0ea5e9',
               fontSize: '18px',
-              fontWeight: 600,
+              fontWeight: '600',
               letterSpacing: '4px',
               textTransform: 'uppercase',
-              margin: '0 0 24px',
+              marginBottom: '24px',
             }}
           >
             callvox.net
@@ -39,44 +39,92 @@ export async function GET() {
             style={{
               color: '#ffffff',
               fontSize: '56px',
-              fontWeight: 700,
-              lineHeight: 1.1,
+              fontWeight: '700',
+              lineHeight: '1.1',
               letterSpacing: '-1px',
               maxWidth: '800px',
-              margin: '0 0 32px',
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
+              margin: '0 0 32px 0',
             }}
           >
             The unified wholesale platform built for the world&apos;s fastest-growing markets.
           </h1>
 
-          {/* 5 product pills */}
+          {/* 5 product pills - static */}
           <div style={{ display: 'flex', gap: '12px', marginTop: '8px', flexWrap: 'wrap' }}>
-            {['Voice', 'SMS', 'Airtime', 'eSIM', 'DIDs'].map((product) => (
-              <div
-                key={product}
-                style={{
-                  backgroundColor: 'rgba(14, 165, 233, 0.15)',
-                  border: '1px solid rgba(14, 165, 233, 0.4)',
-                  color: '#0ea5e9',
-                  fontSize: '16px',
-                  fontWeight: 600,
-                  padding: '8px 20px',
-                  borderRadius: '999px',
-                }}
-              >
-                {product}
-              </div>
-            ))}
+            <div
+              style={{
+                backgroundColor: 'rgba(14, 165, 233, 0.15)',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
+                color: '#0ea5e9',
+                fontSize: '16px',
+                fontWeight: '600',
+                padding: '8px 20px',
+                borderRadius: '999px',
+              }}
+            >
+              Voice
+            </div>
+            <div
+              style={{
+                backgroundColor: 'rgba(14, 165, 233, 0.15)',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
+                color: '#0ea5e9',
+                fontSize: '16px',
+                fontWeight: '600',
+                padding: '8px 20px',
+                borderRadius: '999px',
+              }}
+            >
+              SMS
+            </div>
+            <div
+              style={{
+                backgroundColor: 'rgba(14, 165, 233, 0.15)',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
+                color: '#0ea5e9',
+                fontSize: '16px',
+                fontWeight: '600',
+                padding: '8px 20px',
+                borderRadius: '999px',
+              }}
+            >
+              Airtime
+            </div>
+            <div
+              style={{
+                backgroundColor: 'rgba(14, 165, 233, 0.15)',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
+                color: '#0ea5e9',
+                fontSize: '16px',
+                fontWeight: '600',
+                padding: '8px 20px',
+                borderRadius: '999px',
+              }}
+            >
+              eSIM
+            </div>
+            <div
+              style={{
+                backgroundColor: 'rgba(14, 165, 233, 0.15)',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
+                color: '#0ea5e9',
+                fontSize: '16px',
+                fontWeight: '600',
+                padding: '8px 20px',
+                borderRadius: '999px',
+              }}
+            >
+              DIDs
+            </div>
           </div>
 
           {/* Bottom accent bar */}
           <div
             style={{
               position: 'absolute',
-              bottom: 0,
-              left: 0,
-              right: 0,
+              bottom: '0',
+              left: '0',
+              right: '0',
               height: '4px',
               backgroundColor: '#0ea5e9',
             }}
