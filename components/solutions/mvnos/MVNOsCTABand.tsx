@@ -30,7 +30,7 @@ export default function MVNOsCTABand() {
             <Button
               variant="primary"
               size="lg"
-              className="bg-cyan-500 text-white hover:bg-cyan-600"
+              className="bg-cyan-DEFAULT text-white hover:bg-cyan-DEFAULT-600"
             >
               Talk to an MVNO specialist →
             </Button>

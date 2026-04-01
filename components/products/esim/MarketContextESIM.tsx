@@ -58,14 +58,14 @@ export function MarketContextESIM() {
               variants={itemVariants}
               className={`p-6 rounded-lg ${
                 stat.highlight
-                  ? 'bg-cyan-50 border-2 border-cyan-DEFAULT'
+                  ? 'bg-navy-50 border-2 border-cyan-DEFAULT'
                   : 'bg-white border border-navy-100'
               }`}
             >
               <div className={`text-3xl sm:text-4xl font-bold mb-2 ${stat.highlight ? 'text-cyan-DEFAULT' : 'text-navy-DEFAULT'}`}>
                 {stat.number}
               </div>
-              <p className={`text-sm sm:text-base ${stat.highlight ? 'text-cyan-900' : 'text-navy-600'}`}>
+              <p className={`text-sm sm:text-base ${stat.highlight ? 'text-navy-DEFAULT' : 'text-navy-600'}`}>
                 {stat.label}
               </p>
               {stat.highlight && (

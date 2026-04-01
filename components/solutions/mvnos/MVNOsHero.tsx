@@ -12,7 +12,7 @@ export default function MVNOsHero() {
   return (
     <section ref={ref} className="relative bg-navy-DEFAULT py-20 md:py-24 lg:min-h-[55vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-screen blur-3xl" />
+        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-DEFAULT rounded-full mix-blend-screen blur-3xl" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -30,8 +30,8 @@ export default function MVNOsHero() {
 
           {/* Eyebrow */}
           <div className="mb-6 flex justify-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-400/50">
-              <span className="text-xs font-bold uppercase tracking-wider text-cyan-300">For Mobile Virtual Network Operators</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-DEFAULT/20 border border-cyan-DEFAULT/50">
+              <span className="text-xs font-bold uppercase tracking-wider text-cyan-DEFAULT">For Mobile Virtual Network Operators</span>
             </div>
           </div>
 

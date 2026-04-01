@@ -11,7 +11,7 @@ export default function MVNOTestimonial() {
   return (
     <section ref={ref} className="bg-navy-DEFAULT py-20 md:py-28 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-screen blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-DEFAULT rounded-full mix-blend-screen blur-3xl" />
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ export default function MVNOTestimonial() {
             &quot;We went from vendor chaos — four different contracts, four different support lines, four different invoices — to a single Callvox relationship covering everything. Our ops overhead dropped by 60%.&quot;
           </blockquote>
           <div className="space-y-1">
-            <p className="text-cyan-300 font-semibold">CTO, South Asian MVNO</p>
+            <p className="text-cyan-DEFAULT font-semibold">CTO, South Asian MVNO</p>
             <p className="text-navy-200 text-sm">4 vendors consolidated to 1</p>
           </div>
         </motion.div>

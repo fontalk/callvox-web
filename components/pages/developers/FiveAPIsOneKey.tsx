@@ -13,7 +13,7 @@ const apis = [
 
 const getMethodColor = (method: string) => {
   if (method === 'GET') return 'bg-green-100 text-green-700';
-  return 'bg-cyan-100 text-cyan-700';
+  return 'bg-cyan-DEFAULT-100 text-cyan-DEFAULT-700';
 };
 
 export default function FiveAPIsOneKey() {

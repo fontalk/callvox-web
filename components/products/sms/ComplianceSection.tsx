@@ -33,7 +33,7 @@ export default function ComplianceSection() {
           className="max-w-2xl"
         >
           <div className="mb-6">
-            <span className="text-cyan text-xs font-semibold uppercase tracking-wider">Compliance</span>
+            <span className="text-cyan-DEFAULT text-xs font-semibold uppercase tracking-wider">Compliance</span>
           </div>
           <h2 className="text-navy-DEFAULT font-semibold text-4xl mb-6">
             The compliance burden is on us, not you.
@@ -55,7 +55,7 @@ export default function ComplianceSection() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg p-8 space-y-4"
               >
-                <Icon size={32} weight="duotone" className="text-cyan" />
+                <Icon size={32} weight="duotone" className="text-cyan-DEFAULT" />
                 <h3 className="font-semibold text-navy-DEFAULT text-lg">{card.title}</h3>
                 <p className="text-navy-600 text-sm leading-relaxed">{card.desc}</p>
               </motion.div>

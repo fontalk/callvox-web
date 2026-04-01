@@ -61,7 +61,7 @@ export default function SMSTechnicalSpecs() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: i * 0.05 }}
                   viewport={{ once: true }}
-                  className="border-b border-gray-200 pb-4 last:border-b-0"
+                  className="border-b border-navy-100 pb-4 last:border-b-0"
                 >
                   <p className="text-navy-600 text-sm font-medium mb-1">{spec.label}</p>
                   <p className="text-navy-DEFAULT font-semibold">{spec.value}</p>
@@ -80,7 +80,7 @@ export default function SMSTechnicalSpecs() {
                 <thead>
                   <tr className="border-b border-gray-300">
                     {['Type', 'Best For', 'Throughput', '2-Way', 'Setup', 'Countries'].map((h) => (
-                      <th key={h} className="text-left py-3 px-4 font-semibold text-navy-DEFAULT bg-gray-50">
+                      <th key={h} className="text-left py-3 px-4 font-semibold text-navy-DEFAULT bg-navy-50">
                         {h}
                       </th>
                     ))}
@@ -88,7 +88,7 @@ export default function SMSTechnicalSpecs() {
                 </thead>
                 <tbody>
                   {senderComparison.map((row, i) => (
-                    <tr key={i} className="border-b border-gray-200 hover:bg-gray-50">
+                    <tr key={i} className="border-b border-navy-100 hover:bg-navy-50">
                       <td className="py-3 px-4 font-semibold text-navy-DEFAULT">{row.type}</td>
                       <td className="py-3 px-4 text-navy-600">{row.bestFor}</td>
                       <td className="py-3 px-4 text-navy-600">{row.throughput}</td>

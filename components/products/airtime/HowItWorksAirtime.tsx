@@ -52,8 +52,8 @@ export default function HowItWorksAirtime() {
                 className="text-center"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-cyan-400/10 rounded-full">
-                    <Icon size={28} weight="bold" className="text-cyan-400" />
+                  <div className="p-3 bg-cyan-DEFAULT/10 rounded-full">
+                    <Icon size={28} weight="bold" className="text-cyan-DEFAULT" />
                   </div>
                 </div>
                 <h3 className="text-sm font-semibold tracking-wide text-navy-DEFAULT mb-2">{step.title}</h3>

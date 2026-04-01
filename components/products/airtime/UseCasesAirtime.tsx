@@ -53,9 +53,9 @@ export default function UseCasesAirtime() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ delay: (i + 2) * 0.1 }}
-                className="p-6 border border-gray-200 rounded-2xl hover:border-cyan-400/30 transition-colors"
+                className="p-6 border border-navy-100 rounded-2xl hover:border-cyan-DEFAULT/30 transition-colors"
               >
-                <Icon size={32} weight="duotone" className="text-cyan-400 mb-4" />
+                <Icon size={32} weight="duotone" className="text-cyan-DEFAULT mb-4" />
                 <h3 className="text-lg font-semibold text-navy-DEFAULT mb-3">{useCase.title}</h3>
                 <p className="text-sm text-navy-600 leading-relaxed">{useCase.description}</p>
               </motion.div>

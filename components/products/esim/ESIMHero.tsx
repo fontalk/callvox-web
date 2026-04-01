@@ -21,7 +21,7 @@ export function ESIMHero() {
         >
           <div className="text-sm text-navy-200 mb-4">Products → eSIM</div>
           
-          <div className="inline-flex items-center gap-2 bg-cyan-50 px-3 py-1 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-navy-50 px-3 py-1 rounded-full mb-6">
             <span className="text-xs font-semibold text-cyan-DEFAULT">WHOLESALE ESIM PROVISIONING</span>
           </div>
 
@@ -51,16 +51,9 @@ export function ESIMHero() {
         >
           <div className="bg-navy-800 rounded-xl p-12 aspect-square flex items-center justify-center">
             <svg className="w-full h-full" viewBox="0 0 300 300">
-              <defs>
-                <linearGradient id="simGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#0ea5e9" />
-                  <stop offset="100%" stopColor="#06b6d4" />
-                </linearGradient>
-              </defs>
-              
               {/* SIM Card */}
-              <rect x="60" y="50" width="120" height="180" rx="8" fill="url(#simGradient)" opacity="0.3" />
-              <circle cx="130" cy="120" r="15" fill="url(#simGradient)" opacity="0.6" />
+              <rect x="60" y="50" width="120" height="180" rx="8" fill="#0ea5e9" opacity="0.3" />
+              <circle cx="130" cy="120" r="15" fill="#0ea5e9" opacity="0.6" />
               
               {/* Signal Arc */}
               <path d="M 200 200 Q 250 150 240 80" stroke="#0ea5e9" strokeWidth="3" fill="none" strokeLinecap="round" />

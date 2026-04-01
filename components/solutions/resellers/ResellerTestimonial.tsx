@@ -26,12 +26,12 @@ export default function ResellerTestimonial() {
           animate={isInView ? 'visible' : 'hidden'}
           className="text-center"
         >
-          <Quote weight="duotone" size={40} className="text-cyan-500 mx-auto mb-8" />
+          <Quote weight="duotone" size={40} className="text-cyan-DEFAULT mx-auto mb-8" />
           <blockquote className="text-white text-3xl font-semibold mb-8 leading-relaxed">
             The white-label portal is the product. We onboarded 12 enterprise clients in Q1 without adding a single person to our ops team. The automated billing alone saved us 20 hours a month.
           </blockquote>
           <p className="text-navy-200">
-            <strong className="text-cyan-300">CEO, LatAm Telecom Reseller</strong> · 2.1M top-ups/month
+            <strong className="text-cyan-DEFAULT">CEO, LatAm Telecom Reseller</strong> · 2.1M top-ups/month
           </p>
         </motion.div>
       </div>

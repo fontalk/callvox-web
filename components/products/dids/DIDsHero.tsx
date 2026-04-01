@@ -24,7 +24,7 @@ export default function DIDsHero() {
   return (
     <section className="relative min-h-[60vh] bg-navy-DEFAULT pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-10 w-96 h-96 bg-cyan-400 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-10 w-96 h-96 bg-cyan-DEFAULT rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -39,7 +39,7 @@ export default function DIDsHero() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-8 flex items-center gap-2">
-            <span className="px-3 py-1 rounded-full bg-cyan-400/20 border border-cyan-400 text-cyan-300 text-xs font-semibold">
+            <span className="px-3 py-1 rounded-full bg-cyan-DEFAULT/20 border border-cyan-DEFAULT text-cyan-DEFAULT text-xs font-semibold">
               VIRTUAL PHONE NUMBERS & DIDs
             </span>
           </motion.div>

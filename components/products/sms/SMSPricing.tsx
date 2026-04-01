@@ -50,11 +50,11 @@ export default function SMSPricing() {
             >
               <h3 className="text-white font-semibold text-lg">{card.region}</h3>
               <div className="space-y-3">
-                <p className="text-cyan font-semibold">{card.rate}</p>
+                <p className="text-cyan-DEFAULT font-semibold">{card.rate}</p>
                 <ul className="space-y-2">
                   {card.features.map((f, j) => (
                     <li key={j} className="text-navy-200 text-sm flex items-start gap-2">
-                      <span className="text-cyan mt-1">•</span>
+                      <span className="text-cyan-DEFAULT mt-1">•</span>
                       <span>{f}</span>
                     </li>
                   ))}

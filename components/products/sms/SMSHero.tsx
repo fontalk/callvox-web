@@ -30,7 +30,7 @@ export default function SMSHero() {
   return (
     <section className="relative min-h-[60vh] bg-navy-DEFAULT overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan rounded-full blur-3xl" />
+        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-DEFAULT rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32">
@@ -43,8 +43,8 @@ export default function SMSHero() {
           >
             <div>
               <div className="inline-block mb-4">
-                <div className="px-3 py-1.5 bg-cyan/10 border border-cyan/30 rounded-full">
-                  <span className="text-cyan text-xs font-semibold uppercase tracking-wider">
+                <div className="px-3 py-1.5 bg-cyan-DEFAULT/10 border border-cyan-DEFAULT/30 rounded-full">
+                  <span className="text-cyan-DEFAULT text-xs font-semibold uppercase tracking-wider">
                     A2P SMS & MESSAGING
                   </span>
                 </div>
@@ -76,7 +76,7 @@ export default function SMSHero() {
             className="flex flex-col items-center justify-center"
           >
             <div className="text-center space-y-4">
-              <div className="text-8xl font-bold text-cyan">
+              <div className="text-8xl font-bold text-cyan-DEFAULT">
                 {count.toFixed(1)}%
               </div>
               <div className="space-y-2">

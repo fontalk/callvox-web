@@ -72,8 +72,8 @@ export default function ESIMFocus() {
                 variants={itemVariants}
                 className="bg-white rounded-lg p-8 border border-navy-100"
               >
-                <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-4">
-                  <IconComponent size={24} className="text-cyan-500" weight="duotone" />
+                <div className="w-12 h-12 rounded-lg bg-cyan-DEFAULT-100 flex items-center justify-center mb-4">
+                  <IconComponent size={24} className="text-cyan-DEFAULT" weight="duotone" />
                 </div>
                 <h3 className="text-navy-DEFAULT font-semibold text-lg mb-3">{benefit.title}</h3>
                 <p className="text-navy-600">{benefit.desc}</p>

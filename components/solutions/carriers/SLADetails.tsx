@@ -97,7 +97,7 @@ export default function SLADetails() {
         >
           <p className="text-sm">
             Full SLA documentation available without a sales call.{' '}
-            <a href="#" className="text-cyan-DEFAULT hover:text-cyan-600 font-semibold inline-flex items-center gap-1">
+            <a href="#" className="text-cyan-DEFAULT hover:text-cyan-DEFAULT-600 font-semibold inline-flex items-center gap-1">
               Download
               <CaretRight size={16} weight="fill" />
             </a>

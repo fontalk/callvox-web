@@ -27,7 +27,7 @@ export default function ResellersHero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          className="inline-block bg-cyan-500/20 text-cyan-300 px-4 py-2 rounded-full text-sm font-semibold mb-8"
+          className="inline-block bg-cyan-DEFAULT/20 text-cyan-DEFAULT px-4 py-2 rounded-full text-sm font-semibold mb-8"
         >
           FOR RESELLERS & AGGREGATORS
         </motion.div>

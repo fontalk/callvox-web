@@ -26,7 +26,7 @@ export function TechnicalArchitecture() {
     {
       title: 'Callvox SM-DP+',
       subtitle: 'GSMA SAS-SM certified',
-      bgColor: 'bg-cyan-50',
+      bgColor: 'bg-navy-50',
       borderColor: 'border-cyan-DEFAULT',
       isHighlight: true,
     },

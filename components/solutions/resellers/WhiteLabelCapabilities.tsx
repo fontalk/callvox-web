@@ -58,7 +58,7 @@ export default function WhiteLabelCapabilities() {
                 initial="hidden"
                 animate={isInView ? 'visible' : 'hidden'}
               >
-                <Icon weight="duotone" size={40} className="text-cyan-500 mb-4" />
+                <Icon weight="duotone" size={40} className="text-cyan-DEFAULT mb-4" />
                 <h3 className="font-semibold text-navy-DEFAULT text-xl mb-3">{feature.title}</h3>
                 <p className="text-navy-200">{feature.description}</p>
               </motion.div>

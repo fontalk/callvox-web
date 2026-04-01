@@ -16,7 +16,7 @@ export default function MarketContextAirtime() {
   ]
 
   return (
-    <section ref={ref} className="bg-white py-12 border-b border-gray-200">
+    <section ref={ref} className="bg-white py-12 border-b border-navy-100">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (

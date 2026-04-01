@@ -67,11 +67,11 @@ export default function PricingDIDs() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="bg-gray-50 rounded-lg p-8 border border-gray-200"
+              className="bg-navy-50 rounded-lg p-8 border border-navy-100"
             >
               <h3 className="font-bold text-navy-DEFAULT text-xl mb-4">{tier.name}</h3>
               <div className="mb-2">
-                <span className="text-4xl font-bold text-cyan-400">from {tier.price}</span>
+                <span className="text-4xl font-bold text-cyan-DEFAULT">from {tier.price}</span>
                 <span className="text-gray-600 ml-2">{tier.period}</span>
               </div>
               <p className="text-gray-600 text-sm">{tier.desc}</p>

@@ -11,7 +11,7 @@ const stats = [
 
 export default function MarketContextStrip() {
   return (
-    <section className="bg-white border-b border-gray-200 py-12">
+    <section className="bg-white border-b border-navy-100 py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, i) => (

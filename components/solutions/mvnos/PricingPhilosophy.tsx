@@ -65,7 +65,7 @@ export default function PricingPhilosophy() {
               className="bg-navy-50 rounded-lg p-8 border border-navy-100"
             >
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 rounded-full bg-cyan-DEFAULT flex items-center justify-center flex-shrink-0 mt-1">
                   <Check size={16} className="text-white" weight="bold" />
                 </div>
                 <div>

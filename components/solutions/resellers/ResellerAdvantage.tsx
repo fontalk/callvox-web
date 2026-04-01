@@ -59,7 +59,7 @@ export default function ResellerAdvantage() {
                 animate={isInView ? 'visible' : 'hidden'}
                 className="bg-navy-50/50 p-6 rounded-lg border border-navy-100"
               >
-                <Icon weight="duotone" size={32} className="text-cyan-500 mb-4" />
+                <Icon weight="duotone" size={32} className="text-cyan-DEFAULT mb-4" />
                 <h3 className="font-semibold text-navy-DEFAULT text-lg mb-3">{product.name}</h3>
                 <div className="mb-4">
                   <div className="text-sm text-navy-200 mb-2">{product.min}–{product.max}% margin</div>

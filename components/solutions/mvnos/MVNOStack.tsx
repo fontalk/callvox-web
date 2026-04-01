@@ -65,7 +65,7 @@ export default function MVNOStack() {
                 >
                   <div className="w-24 h-24 rounded-lg bg-navy-50 flex items-center justify-center mb-3 border border-navy-100">
                     <div className="flex flex-col items-center gap-1">
-                      <IconComponent weight="duotone" size={24} className="text-cyan-500" />
+                      <IconComponent weight="duotone" size={24} className="text-cyan-DEFAULT" />
                       <span className="text-xs font-bold text-navy-600">{service.num}</span>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function MVNOStack() {
 
                 {idx < services.length - 1 && (
                   <div className="hidden lg:block">
-                    <ArrowRight size={32} className="text-cyan-400" weight="bold" />
+                    <ArrowRight size={32} className="text-cyan-DEFAULT" weight="bold" />
                   </div>
                 )}
               </div>
@@ -92,7 +92,7 @@ export default function MVNOStack() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-cyan-500 text-sm font-semibold">All through one API key. One monthly invoice.</p>
+          <p className="text-cyan-DEFAULT text-sm font-semibold">All through one API key. One monthly invoice.</p>
         </motion.div>
       </div>
     </section>

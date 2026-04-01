@@ -46,9 +46,9 @@ export default function OperatorCoverageAirtime() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: (i + 1) * 0.1 }}
-              className="border-l-4 border-cyan-400 pl-4 py-2"
+              className="border-l-4 border-cyan-DEFAULT pl-4 py-2"
             >
-              <h3 className="text-sm font-semibold tracking-wide text-cyan-400 mb-2">{region.title}</h3>
+              <h3 className="text-sm font-semibold tracking-wide text-cyan-DEFAULT mb-2">{region.title}</h3>
               <p className="text-sm text-navy-200 leading-relaxed">{region.operators}</p>
             </motion.div>
           ))}

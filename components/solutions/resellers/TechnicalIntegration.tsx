@@ -49,9 +49,9 @@ export default function TechnicalIntegration() {
                   variants={fadeUpVariants}
                   initial="hidden"
                   animate={isInView ? 'visible' : 'hidden'}
-                  className="border-l-2 border-cyan-500 pl-4 py-2"
+                  className="border-l-2 border-cyan-DEFAULT pl-4 py-2"
                 >
-                  <div className="text-sm font-semibold text-cyan-600">{spec.label}</div>
+                  <div className="text-sm font-semibold text-cyan-DEFAULT-600">{spec.label}</div>
                   <div className="text-navy-200 text-sm">{spec.value}</div>
                 </motion.div>
               ))}

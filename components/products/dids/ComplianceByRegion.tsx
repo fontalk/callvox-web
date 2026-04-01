@@ -66,7 +66,7 @@ export default function ComplianceByRegion() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="bg-navy-800 rounded-lg p-6 border border-navy-700 hover:border-cyan-400 transition-colors"
+              className="bg-navy-800 rounded-lg p-6 border border-navy-700 hover:border-cyan-DEFAULT transition-colors"
             >
               <h3 className="text-white font-bold text-xl mb-3">{region.name}</h3>
               <p className="text-navy-200 leading-relaxed text-sm">{region.description}</p>

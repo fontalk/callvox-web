@@ -66,7 +66,7 @@ export default function DeliverabilitySection() {
                 className="flex gap-4"
               >
                 <div className="flex-shrink-0 mt-1">
-                  <ChatDots size={24} weight="duotone" className="text-cyan" />
+                  <ChatDots size={24} weight="duotone" className="text-cyan-DEFAULT" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-navy-DEFAULT mb-2">{feature.title}</h3>
@@ -83,7 +83,7 @@ export default function DeliverabilitySection() {
             viewport={{ once: true }}
             className="bg-navy-900 rounded-lg p-6 overflow-auto"
           >
-            <pre className="text-cyan text-xs font-mono leading-relaxed whitespace-pre-wrap break-words">
+            <pre className="text-cyan-DEFAULT text-xs font-mono leading-relaxed whitespace-pre-wrap break-words">
               <code>{codeBlock}</code>
             </pre>
           </motion.div>

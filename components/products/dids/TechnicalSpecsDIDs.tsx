@@ -70,7 +70,7 @@ export default function TechnicalSpecsDIDs() {
               {specs.map((spec, idx) => (
                 <motion.div key={idx} variants={itemVariants} className="flex gap-4">
                   <div className="flex-shrink-0 pt-1">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
+                    <div className="w-2 h-2 rounded-full bg-cyan-DEFAULT"></div>
                   </div>
                   <div>
                     <div className="font-semibold text-navy-DEFAULT text-sm">{spec.label}</div>
@@ -87,14 +87,14 @@ export default function TechnicalSpecsDIDs() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="bg-white rounded-lg p-6 border border-navy-200"
           >
-            <div className="flex gap-2 mb-6 border-b border-gray-200">
+            <div className="flex gap-2 mb-6 border-b border-navy-100">
               {['search', 'provision', 'port'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
                     activeTab === tab
-                      ? 'border-cyan-400 text-cyan-400'
+                      ? 'border-cyan-DEFAULT text-cyan-DEFAULT'
                       : 'border-transparent text-gray-600 hover:text-navy-DEFAULT'
                   }`}
                 >
@@ -103,7 +103,7 @@ export default function TechnicalSpecsDIDs() {
               ))}
             </div>
             <div className="bg-navy-900 rounded p-4 overflow-x-auto">
-              <code className="text-cyan-300 font-mono text-sm whitespace-pre-wrap break-words">
+              <code className="text-cyan-DEFAULT font-mono text-sm whitespace-pre-wrap break-words">
                 {snippets[activeTab as keyof typeof snippets]}
               </code>
             </div>

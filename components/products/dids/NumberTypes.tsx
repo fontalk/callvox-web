@@ -82,9 +82,9 @@ export default function NumberTypes() {
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:border-cyan-400 transition-colors"
+                className="bg-navy-50 rounded-lg p-6 border border-navy-100 hover:border-cyan-DEFAULT transition-colors"
               >
-                <IconComponent size={32} className="text-cyan-400 mb-4" weight="duotone" />
+                <IconComponent size={32} className="text-cyan-DEFAULT mb-4" weight="duotone" />
                 <h3 className="font-bold text-navy-DEFAULT mb-2 text-lg">{type.name}</h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">{type.description}</p>
                 <div className="text-navy-600 font-mono text-xs bg-navy-50 px-3 py-2 rounded">

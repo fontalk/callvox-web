@@ -64,9 +64,9 @@ export default function TechnicalSpecsAirtime() {
             {complianceCards.map((card, i) => {
               const Icon = card.icon
               return (
-                <div key={i} className="p-6 border border-gray-200 rounded-lg">
+                <div key={i} className="p-6 border border-navy-100 rounded-lg">
                   <div className="flex gap-3 mb-3">
-                    <Icon size={24} weight="bold" className="text-cyan-400 flex-shrink-0" />
+                    <Icon size={24} weight="bold" className="text-cyan-DEFAULT flex-shrink-0" />
                     <h4 className="font-semibold text-navy-DEFAULT">{card.title}</h4>
                   </div>
                   <p className="text-sm text-navy-600">{card.description}</p>

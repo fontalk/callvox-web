@@ -117,7 +117,7 @@ export default function CoverageByProduct() {
               {region.count > 5 && (
                 <button
                   onClick={() => setExpandedRegion(expandedRegion === region.name ? null : region.name)}
-                  className="text-cyan-DEFAULT text-sm font-semibold hover:text-cyan-600 transition-colors"
+                  className="text-cyan-DEFAULT text-sm font-semibold hover:text-cyan-DEFAULT-600 transition-colors"
                 >
                   Show all {region.count} →
                 </button>

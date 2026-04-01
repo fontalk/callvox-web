@@ -22,7 +22,7 @@ export default function AirtimeHero() {
             `}</style>
           </defs>
           {/* Simplified world map shapes */}
-          <g fill="none" stroke="currentColor" strokeWidth="1" className="text-cyan-300">
+          <g fill="none" stroke="currentColor" strokeWidth="1" className="text-cyan-DEFAULT">
             {/* Africa outline */}
             <path d="M 350 150 L 400 180 L 420 200 L 430 280 L 420 340 L 380 380 L 320 350 L 300 250 Z" />
             {/* South Asia outline */}
@@ -31,9 +31,9 @@ export default function AirtimeHero() {
             <path d="M 150 250 L 200 240 L 220 320 L 200 400 L 150 380 L 120 320 Z" />
           </g>
           {/* Pulsing dots on regions */}
-          <circle cx="370" cy="280" r="6" fill="currentColor" className="text-cyan-400 pulse-africa" />
-          <circle cx="580" cy="260" r="6" fill="currentColor" className="text-cyan-400 pulse-asia" />
-          <circle cx="170" cy="320" r="6" fill="currentColor" className="text-cyan-400 pulse-latam" />
+          <circle cx="370" cy="280" r="6" fill="currentColor" className="text-cyan-DEFAULT pulse-africa" />
+          <circle cx="580" cy="260" r="6" fill="currentColor" className="text-cyan-DEFAULT pulse-asia" />
+          <circle cx="170" cy="320" r="6" fill="currentColor" className="text-cyan-DEFAULT pulse-latam" />
         </svg>
       </div>
 
@@ -55,8 +55,8 @@ export default function AirtimeHero() {
           transition={{ delay: 0.2 }}
           className="inline-block mb-6"
         >
-          <div className="px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/30">
-            <span className="text-xs font-semibold tracking-widest text-cyan-400">INTERNATIONAL MOBILE RECHARGE</span>
+          <div className="px-4 py-2 rounded-full bg-cyan-DEFAULT/10 border border-cyan-DEFAULT/30">
+            <span className="text-xs font-semibold tracking-widest text-cyan-DEFAULT">INTERNATIONAL MOBILE RECHARGE</span>
           </div>
         </motion.div>
 

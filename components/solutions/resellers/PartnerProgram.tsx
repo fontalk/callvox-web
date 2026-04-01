@@ -57,7 +57,7 @@ export default function PartnerProgram() {
               <ul className="space-y-3">
                 {tier.features.map((feature) => (
                   <li key={feature} className="text-navy-100 text-sm flex items-start">
-                    <span className="text-cyan-500 mr-3 mt-1">•</span>
+                    <span className="text-cyan-DEFAULT mr-3 mt-1">•</span>
                     <span>{feature}</span>
                   </li>
                 ))}

@@ -56,7 +56,7 @@ export default function IntegrationCompatibility() {
           className="text-center"
         >
           <span className="text-navy-600">Don&apos;t see your platform? </span>
-          <a href="#" className="text-cyan-DEFAULT hover:text-cyan-600 font-medium">
+          <a href="#" className="text-cyan-DEFAULT hover:text-cyan-DEFAULT-600 font-medium">
             Contact us
           </a>
           <span className="text-navy-600"> — we support all SIP-compatible systems.</span>
