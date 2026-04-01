@@ -41,9 +41,8 @@ export default function MVNOsHero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
-              variant="primary"
+              variant="white"
               size="lg"
-              className="bg-white text-navy-DEFAULT hover:bg-navy-50"
             >
               Talk to an MVNO Specialist →
             </Button>

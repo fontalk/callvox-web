@@ -60,7 +60,7 @@ export default function SMSHero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" className="bg-white text-navy-DEFAULT hover:bg-gray-100">
+              <Button variant="white" className="">
                 Download SMS Rate Card <ArrowRight size={20} weight="bold" className="ml-2" />
               </Button>
               <Button variant="ghost" className="text-white border-white hover:bg-white/10">

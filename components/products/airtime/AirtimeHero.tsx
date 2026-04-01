@@ -88,7 +88,7 @@ export default function AirtimeHero() {
           transition={{ delay: 0.5 }}
           className="flex gap-4 flex-wrap"
         >
-          <Button variant="primary" className="bg-white text-navy-DEFAULT hover:bg-navy-200">
+          <Button variant="white">
             Get API Access <ArrowRight size={16} className="ml-2" />
           </Button>
           <Button variant="ghost" className="text-white border-white hover:bg-white/10">

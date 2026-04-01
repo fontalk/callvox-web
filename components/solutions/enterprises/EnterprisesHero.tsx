@@ -40,16 +40,14 @@ export default function EnterprisesHero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              variant="primary"
+              variant="white"
               size="lg"
-              className="bg-white text-navy-DEFAULT hover:bg-gray-100"
             >
               Get a Quote <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
             <Button
-              variant="outline"
+              variant="white-ghost"
               size="lg"
-              className="border-white text-white hover:bg-white/10"
             >
               Start Free Trial
             </Button>
