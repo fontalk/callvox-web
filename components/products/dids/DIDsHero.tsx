@@ -60,10 +60,10 @@ export default function DIDsHero() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button variant="primary" className="group">
+            <Button variant="white" className="group">
               Check Number Availability <ArrowRight className="inline ml-2 transition-transform group-hover:translate-x-1" size={18} />
             </Button>
-            <Button variant="ghost">Get Wholesale Rates</Button>
+            <Button variant="white-ghost">Get Wholesale Rates</Button>
           </motion.div>
         </motion.div>
       </div>

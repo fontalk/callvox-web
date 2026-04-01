@@ -42,11 +42,11 @@ export default function CarriersHero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button variant="primary" size="lg">
+            <Button variant="white" size="lg">
               Request Interconnect Details
               <CaretRight size={18} weight="fill" />
             </Button>
-            <Button variant="ghost" size="lg">
+            <Button variant="white-ghost" size="lg">
               Download Rate Deck
             </Button>
           </div>
