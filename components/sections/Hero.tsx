@@ -65,8 +65,7 @@ export function Hero() {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="mt-6 text-[clamp(40px,6vw,72px)] font-semibold text-navy-DEFAULT leading-[1.08] tracking-[-1.5px]"
           >
-            One platform.<br />
-            Five services.
+            The unified wholesale platform for the world&apos;s fastest-growing markets.
           </motion.h1>
           
           {/* Sub-headline */}
