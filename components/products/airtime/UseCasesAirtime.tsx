@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { House, Storefront, ChartLine } from '@phosphor-icons/react'
+import { House, Storefront, ChartLineUp } from '@phosphor-icons/react'
 
 export default function UseCasesAirtime() {
   const ref = useRef(null)
@@ -21,7 +21,7 @@ export default function UseCasesAirtime() {
       description: 'Integrate airtime top-up as a core transaction type alongside cash transfers and bill payments. REST API with webhook delivery confirmation.',
     },
     {
-      icon: ChartLine,
+      icon: ChartLineUp,
       title: 'Retail & reseller networks',
       description: 'B2B2C airtime distribution at wholesale margins. Multi-tier reseller support with automated billing and real-time transaction tracking.',
     },

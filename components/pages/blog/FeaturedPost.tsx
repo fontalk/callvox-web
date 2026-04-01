@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, SignalHigh } from '@phosphor-icons/react';
+import { ArrowRight, CellSignalHigh } from '@phosphor-icons/react';
 
 export default function FeaturedPost() {
   return (
@@ -61,7 +61,7 @@ export default function FeaturedPost() {
                     <path d="M 150 210 L 145 200" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" />
                     <path d="M 90 150 L 100 145" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" />
                   </g>
-                  <SignalHigh size={40} className="absolute text-cyan-DEFAULT opacity-60" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+                  <CellSignalHigh size={40} className="absolute text-cyan-DEFAULT opacity-60" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
                 </svg>
               </div>
             </motion.div>

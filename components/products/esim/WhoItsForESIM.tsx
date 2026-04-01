@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sim as SimCard, Airplane, HardDrives } from '@phosphor-icons/react';
+import { SimCard, Airplane, HardDrives } from '@phosphor-icons/react';
 
 export function WhoItsForESIM() {
   const cards = [

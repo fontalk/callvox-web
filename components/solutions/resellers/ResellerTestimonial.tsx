@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Quote } from '@phosphor-icons/react';
+import { Quotes } from '@phosphor-icons/react';
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -27,7 +27,7 @@ export default function ResellerTestimonial() {
           animate={isInView ? 'visible' : 'hidden'}
           className="text-center"
         >
-          <Quote weight="duotone" size={40} className="text-cyan-DEFAULT mx-auto mb-8" />
+          <Quotes weight="duotone" size={40} className="text-cyan-DEFAULT mx-auto mb-8" />
           <blockquote className="text-white text-3xl font-semibold mb-8 leading-relaxed">
             The white-label portal is the product. We onboarded 12 enterprise clients in Q1 without adding a single person to our ops team. The automated billing alone saved us 20 hours a month.
           </blockquote>

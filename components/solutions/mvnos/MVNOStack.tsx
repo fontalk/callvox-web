@@ -3,14 +3,14 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Phone, ChatCircle, Smartphone, TrendUp, Hash } from '@phosphor-icons/react';
+import { Phone, ChatCircle, Smartphone, Lightning, Hash } from '@phosphor-icons/react';
 import { ArrowRight } from '@phosphor-icons/react';
 
 const services = [
   { num: 1, name: 'Voice termination', desc: 'Direct routes, premium CLI', icon: Phone },
   { num: 2, name: 'A2P SMS', desc: '98%+ delivery, 10DLC included', icon: ChatCircle },
   { num: 3, name: 'eSIM provisioning', desc: 'GSMA SGP.22/32, white-label RSP', icon: Smartphone },
-  { num: 4, name: 'Airtime top-up', desc: '800+ operators, <3s delivery', icon: TrendUp },
+  { num: 4, name: 'Airtime top-up', desc: '800+ operators, <3s delivery', icon: Lightning },
   { num: 5, name: 'DIDs / Numbers', desc: '90+ countries, instant provisioning', icon: Hash },
 ];
 

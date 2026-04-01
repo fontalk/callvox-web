@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Server, GitBranch, ChartLine } from '@phosphor-icons/react';
+import { HardDrive, GitBranch, ChartLineUp } from '@phosphor-icons/react';
 
 const features = [
   {
-    icon: Server,
+    icon: HardDrive,
     title: 'Direct interconnects',
     description: '500+ direct peering relationships with terminating carriers. No aggregation middlemen.'
   },
@@ -15,7 +15,7 @@ const features = [
     description: 'Points of presence across 4 continents with automatic failover routing.'
   },
   {
-    icon: ChartLine,
+    icon: ChartLineUp,
     title: 'Real-time quality scoring',
     description: 'Every route is scored continuously on ASR, PDD, and ACD. Traffic shifts to the best-performing path automatically.'
   }
