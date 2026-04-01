@@ -1,7 +1,7 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
-import { Logo } from '@/components/Logo'
 import { LinkedinLogo, XLogo } from '@phosphor-icons/react'
 
 const footerLinks = {
@@ -44,7 +44,18 @@ export function Footer() {
           {/* Brand Column */}
           <div>
             <Link href="/">
-              <Logo className="w-[140px] h-auto" reversed />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Callvox_logo_dark_sm-I1oKEm7SW72RmSC0iuxr5tVTsSmIPh.png"
+                alt="Callvox"
+                width={180}
+                height={36}
+                priority
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  maxWidth: '180px',
+                }}
+              />
             </Link>
             <p className="text-sm text-navy-400 mt-4 max-w-xs leading-relaxed">
               The unified wholesale platform for the world&apos;s fastest-growing markets.
