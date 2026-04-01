@@ -1,0 +1,69 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+import Button from '@/components/callvox-ui/Button';
+
+export default function MVNOsHero() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+  return (
+    <section ref={ref} className="relative bg-navy-DEFAULT py-20 md:py-24 lg:min-h-[55vh] flex items-center overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-screen blur-3xl" />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          {/* Breadcrumb */}
+          <div className="mb-6 text-sm text-navy-200 font-medium">
+            Solutions → For MVNOs
+          </div>
+
+          {/* Eyebrow */}
+          <div className="mb-6 flex justify-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-400/50">
+              <span className="text-xs font-bold uppercase tracking-wider text-cyan-300">For Mobile Virtual Network Operators</span>
+            </div>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-white font-bold mb-6" style={{ fontSize: 'clamp(36px, 5vw, 52px)' }}>
+            Launch faster. Scale without lock-in.
+          </h1>
+
+          {/* Sub */}
+          <p className="text-navy-200 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+            Everything an MVNO needs in one wholesale relationship — voice termination, A2P messaging, eSIM provisioning, airtime, and virtual numbers. Cloud-native APIs. No long-term commitment required to start.
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              variant="primary"
+              size="lg"
+              className="bg-white text-navy-DEFAULT hover:bg-navy-50"
+            >
+              Talk to an MVNO Specialist →
+            </Button>
+            <Button
+              variant="ghost"
+              size="lg"
+              className="text-white border-white hover:bg-white/10"
+            >
+              View Pricing
+            </Button>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
