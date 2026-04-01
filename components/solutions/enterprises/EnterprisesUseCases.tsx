@@ -1,0 +1,66 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { Building, Globe, Headset } from '@phosphor-icons/react';
+
+const useCases = [
+  {
+    icon: Building,
+    title: 'Replace legacy PSTN',
+    description: 'Migrate your on-premise PBX to SIP trunking. Compatibility with Asterisk, Cisco, Avaya, Microsoft Teams Direct Routing, and Zoom Phone.'
+  },
+  {
+    icon: Globe,
+    title: 'Global office numbers',
+    description: 'Virtual numbers in 90+ countries for regional offices. Local presence without local infrastructure. Voice + SMS on each number.'
+  },
+  {
+    icon: Headset,
+    title: 'Contact centre infrastructure',
+    description: 'High-capacity SIP trunking for inbound call centres. Real-time CDRs, call recording integration, and CNAM management.'
+  }
+];
+
+export default function EnterprisesUseCases() {
+  return (
+    <section className="bg-navy-50/40 py-20 md:py-24">
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-navy-DEFAULT font-bold text-4xl md:text-5xl">
+            Enterprise voice, simplified.
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {useCases.map((useCase, idx) => {
+            const Icon = useCase.icon;
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="p-8 bg-white rounded-xl border border-navy-100"
+              >
+                <Icon size={40} weight="duotone" className="text-cyan-DEFAULT mb-6" />
+                <h3 className="text-navy-DEFAULT font-bold text-xl mb-4">
+                  {useCase.title}
+                </h3>
+                <p className="text-navy-600 leading-relaxed">
+                  {useCase.description}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
