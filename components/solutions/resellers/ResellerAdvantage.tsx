@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+'use client';
+
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Phone, ChatDots, Wallet, SimCard, Phone as DID } from '@phosphor-icons/react';
 

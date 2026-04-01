@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Smartphone, Wifi, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
+import { Phone, ChatCircle, Smartphone, Wifi, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
 
 const products = [
   {
@@ -16,7 +16,7 @@ const products = [
     ]
   },
   {
-    icon: MessageCircle,
+    icon: ChatCircle,
     name: 'SMS',
     price: '0.007',
     unit: '/ message',
