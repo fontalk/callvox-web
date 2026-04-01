@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Logo } from './Logo'
 import { Button } from './callvox-ui/Button'
 import {
@@ -42,11 +43,14 @@ const simpleLinks = [
 ]
 
 export default function Nav() {
+  const pathname = usePathname()
   const [mobileOpen, setMobileOpen]           = useState(false)
   const [mobileProducts, setMobileProducts]   = useState(false)
   const [mobileSolutions, setMobileSolutions] = useState(false)
   const [activeDropdown, setActiveDropdown]   = useState<string | null>(null)
   const navRef = useRef<HTMLElement>(null)
+
+  const isCurrentPage = (href: string) => pathname === href || pathname.startsWith(href + '/')
 
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -162,7 +166,10 @@ export default function Nav() {
               key={link.name}
               href={link.href}
               onClick={() => setActiveDropdown(null)}
-              className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors"
+              aria-current={isCurrentPage(link.href) ? 'page' : undefined}
+              className={`px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-DEFAULT focus-visible:ring-offset-2 rounded-md ${
+                isCurrentPage(link.href) ? 'text-cyan-DEFAULT' : 'text-navy-700 hover:text-cyan-DEFAULT'
+              }`}
             >
               {link.name}
             </Link>

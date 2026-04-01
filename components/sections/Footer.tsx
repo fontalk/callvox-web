@@ -49,7 +49,7 @@ export function Footer() {
                 alt="Callvox"
                 width={180}
                 height={36}
-                priority
+                loading="lazy"
                 style={{
                   width: '100%',
                   height: 'auto',

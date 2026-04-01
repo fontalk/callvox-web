@@ -7,12 +7,14 @@ import { AudiencePaths } from '@/components/sections/AudiencePaths'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { TrustBar } from '@/components/sections/TrustBar'
 import { Footer } from '@/components/sections/Footer'
+import { OrganizationJsonLd } from '@/components/JsonLd'
 
 export default function Home() {
   return (
     <>
+      <OrganizationJsonLd />
       <Nav />
-      <main>
+      <main id="main-content">
         <Hero />
         <LogoBar />
         <ProductGrid />
