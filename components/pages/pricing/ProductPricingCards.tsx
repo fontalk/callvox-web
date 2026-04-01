@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, ChatCircle, DeviceMobile, Wifi, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
+import { Phone, ChatCircle, DeviceMobile, SimCard, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
 
 const products = [
   {
@@ -38,7 +38,7 @@ const products = [
     ]
   },
   {
-    icon: Wifi,
+    icon: SimCard,
     name: 'eSIM',
     price: 'Custom',
     unit: 'pricing',
