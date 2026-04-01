@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, House, Storefront, ChartLine } from '@phosphor-icons/react'
-import Button from '@/components/callvox-ui/Button'
+import { Button } from '@/components/callvox-ui/Button'
 
 export default function AirtimeHero() {
   return (

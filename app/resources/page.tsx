@@ -6,7 +6,7 @@ import CategoryFilter from '@/components/pages/blog/CategoryFilter';
 import ArticleGrid from '@/components/pages/blog/ArticleGrid';
 import ContentUpgradeCTA from '@/components/pages/blog/ContentUpgradeCTA';
 import GatedAssets from '@/components/pages/blog/GatedAssets';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'Resources & Blog | Callvox',

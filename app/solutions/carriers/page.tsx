@@ -1,5 +1,5 @@
 import Nav from '@/components/Nav'
-import Footer from '@/components/sections/Footer'
+import { Footer } from '@/components/sections/Footer'
 import CarriersHero from '@/components/solutions/carriers/CarriersHero'
 import PainPoints from '@/components/solutions/carriers/PainPoints'
 import WhatYouGet from '@/components/solutions/carriers/WhatYouGet'

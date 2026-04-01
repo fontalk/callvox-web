@@ -1,7 +1,7 @@
 'use client';
 
 import Nav from '@/components/Nav';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 import DIDsHero from '@/components/products/dids/DIDsHero';
 import CoverageStats from '@/components/products/dids/CoverageStats';
 import NumberTypes from '@/components/products/dids/NumberTypes';

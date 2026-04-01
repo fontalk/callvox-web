@@ -1,7 +1,7 @@
 'use client';
 
 import Nav from '@/components/Nav';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 import MVNOsHero from '@/components/solutions/mvnos/MVNOsHero';
 import MVNOStack from '@/components/solutions/mvnos/MVNOStack';
 import ESIMFocus from '@/components/solutions/mvnos/ESIMFocus';

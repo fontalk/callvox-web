@@ -7,7 +7,7 @@ import SDKQuickstarts from '@/components/pages/developers/SDKQuickstarts';
 import OnboardingFlow from '@/components/pages/developers/OnboardingFlow';
 import ToolsAndResources from '@/components/pages/developers/ToolsAndResources';
 import DeveloperCTABand from '@/components/pages/developers/DeveloperCTABand';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'Developer Portal | Callvox API',

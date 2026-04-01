@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { UserCircle, Key, Phone, Rocket, ArrowRight } from '@phosphor-icons/react';
-import Button from '@/components/callvox-ui/Button';
+import { Button } from '@/components/callvox-ui/Button';
 
 const steps = [
   {

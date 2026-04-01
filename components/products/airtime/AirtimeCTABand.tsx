@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ArrowRight } from '@phosphor-icons/react'
-import Button from '@/components/callvox-ui/Button'
+import { Button } from '@/components/callvox-ui/Button'
 
 export default function AirtimeCTABand() {
   const ref = useRef(null)

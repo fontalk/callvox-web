@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Nav from '@/components/Nav';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 import SMSHero from '@/components/products/sms/SMSHero';
 import MarketContextStrip from '@/components/products/sms/MarketContextStrip';
 import DeliverabilitySection from '@/components/products/sms/DeliverabilitySection';

@@ -1,5 +1,5 @@
 import Nav from '@/components/Nav';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 import CoverageHero from '@/components/pages/coverage/CoverageHero';
 import InteractiveMap from '@/components/pages/coverage/InteractiveMap';
 import CoverageByProduct from '@/components/pages/coverage/CoverageByProduct';

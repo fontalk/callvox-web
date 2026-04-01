@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Button from '@/components/callvox-ui/Button';
+import { Button } from '@/components/callvox-ui/Button';
 
 export default function RateFinderCTA() {
   const [email, setEmail] = useState('');

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import Button from '@/components/callvox-ui/Button';
+import { Button } from '@/components/callvox-ui/Button';
 
 export default function MVNOsHero() {
   const ref = useRef(null);

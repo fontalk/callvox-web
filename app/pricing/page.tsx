@@ -6,7 +6,7 @@ import VolumeTiers from '@/components/pages/pricing/VolumeTiers';
 import ROICalculator from '@/components/pages/pricing/ROICalculator';
 import IncludedFeatures from '@/components/pages/pricing/IncludedFeatures';
 import PricingCTABand from '@/components/pages/pricing/PricingCTABand';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'Pricing | Callvox',

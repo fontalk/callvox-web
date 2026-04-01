@@ -7,7 +7,7 @@ import OperatorCoverageAirtime from '@/components/products/airtime/OperatorCover
 import TechnicalSpecsAirtime from '@/components/products/airtime/TechnicalSpecsAirtime'
 import CrossSellCallout from '@/components/products/airtime/CrossSellCallout'
 import AirtimeCTABand from '@/components/products/airtime/AirtimeCTABand'
-import Footer from '@/components/sections/Footer'
+import { Footer } from '@/components/sections/Footer'
 
 export const metadata = {
   title: 'Airtime Top-Ups | Callvox',

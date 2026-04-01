@@ -6,7 +6,7 @@ import ByTheNumbers from '@/components/pages/about/ByTheNumbers';
 import MissionSection from '@/components/pages/about/MissionSection';
 import TeamValues from '@/components/pages/about/TeamValues';
 import AboutCTABand from '@/components/pages/about/AboutCTABand';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'About Callvox | 17 Years in Emerging Markets',

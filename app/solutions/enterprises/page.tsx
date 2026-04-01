@@ -7,7 +7,7 @@ import ComplianceSecurity from '@/components/solutions/enterprises/ComplianceSec
 import ROICalculatorCallout from '@/components/solutions/enterprises/ROICalculatorCallout';
 import EnterprisesCTABand from '@/components/solutions/enterprises/EnterprisesCTABand';
 import Nav from '@/components/Nav';
-import Footer from '@/components/sections/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 export const metadata = {
   title: 'Enterprise Voice & Numbers | Callvox',
