@@ -1,0 +1,66 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { Server, GitBranch, ChartLine } from '@phosphor-icons/react';
+
+const features = [
+  {
+    icon: Server,
+    title: 'Direct interconnects',
+    description: '500+ direct peering relationships with terminating carriers. No aggregation middlemen.'
+  },
+  {
+    icon: GitBranch,
+    title: 'Geo-redundant PoPs',
+    description: 'Points of presence across 4 continents with automatic failover routing.'
+  },
+  {
+    icon: ChartLine,
+    title: 'Real-time quality scoring',
+    description: 'Every route is scored continuously on ASR, PDD, and ACD. Traffic shifts to the best-performing path automatically.'
+  }
+];
+
+export default function NetworkInfrastructure() {
+  return (
+    <section className="bg-white py-20 md:py-24">
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-navy-DEFAULT font-bold text-4xl md:text-5xl">
+            The infrastructure behind the coverage.
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, idx) => {
+            const Icon = feature.icon;
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="p-8 bg-navy-50/40 rounded-xl border border-navy-100"
+              >
+                <Icon size={40} weight="duotone" className="text-cyan-DEFAULT mb-6" />
+                <h3 className="text-navy-DEFAULT font-bold text-xl mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-navy-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
