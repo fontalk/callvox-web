@@ -1,0 +1,47 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { CheckCircle } from '@phosphor-icons/react';
+
+const features = [
+  'API access',
+  'Real-time CDRs',
+  'Portal access',
+  'Email support',
+  'Status page access',
+  'Standard SLA documentation'
+];
+
+export default function IncludedFeatures() {
+  return (
+    <section className="bg-navy-DEFAULT py-20 md:py-24">
+      <div className="container">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-white font-bold text-4xl md:text-5xl mb-16"
+        >
+          Included on every account. No extras.
+        </motion.h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.05 }}
+              viewport={{ once: true }}
+              className="flex gap-4 items-center"
+            >
+              <CheckCircle size={24} weight="fill" className="text-cyan-DEFAULT flex-shrink-0" />
+              <span className="text-white font-medium">{feature}</span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
