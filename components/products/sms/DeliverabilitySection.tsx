@@ -1,0 +1,94 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ChatDots, ArrowRight } from '@phosphor-icons/react';
+
+const features = [
+  {
+    title: 'Direct carrier connections',
+    desc: '600+ direct operator connections. No third-party hubs between your traffic and the destination carrier.',
+  },
+  {
+    title: 'HLR / MNP pre-validation',
+    desc: 'Validate every number before send. Reduce failed deliveries and wasted spend on invalid or ported numbers.',
+  },
+  {
+    title: 'Real-time DLR webhooks',
+    desc: 'Delivery receipts pushed to your endpoint in under 2 seconds. Full delivery state visibility — delivered, failed, pending, expired.',
+  },
+];
+
+const codeBlock = `POST /v1/sms/send HTTP/1.1
+Content-Type: application/json
+
+{
+  "to": "+1234567890",
+  "from": "YourBrand",
+  "text": "Your OTP: 123456",
+  "sender_id": "10DLC"
+}
+
+// DLR Webhook Response
+{
+  "message_id": "msg_abc123xyz",
+  "status": "delivered",
+  "timestamp": "2024-01-15T14:32:45Z",
+  "carrier": "Verizon",
+  "latency_ms": 1240
+}`;
+
+export default function DeliverabilitySection() {
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 space-y-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-2xl"
+        >
+          <h2 className="text-navy-DEFAULT font-semibold text-4xl mb-6">Delivery is the product.</h2>
+          <p className="text-navy-600 text-lg leading-relaxed">
+            Grey routes are cheap until they're not. Carrier filtering kills grey-route traffic overnight — and your clients' campaigns with it. Callvox routes exclusively through direct carrier connections. No grey routes. Ever.
+          </p>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-8">
+            {features.map((feature, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="flex gap-4"
+              >
+                <div className="flex-shrink-0 mt-1">
+                  <ChatDots size={24} weight="duotone" className="text-cyan" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-navy-DEFAULT mb-2">{feature.title}</h3>
+                  <p className="text-navy-600 text-sm">{feature.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-navy-900 rounded-lg p-6 overflow-auto"
+          >
+            <pre className="text-cyan text-xs font-mono leading-relaxed whitespace-pre-wrap break-words">
+              <code>{codeBlock}</code>
+            </pre>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
