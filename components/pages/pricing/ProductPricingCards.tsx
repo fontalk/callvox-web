@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, ChatCircle, Smartphone, Wifi, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
+import { Phone, ChatCircle, DeviceMobile, Wifi, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
 
 const products = [
   {
@@ -27,7 +27,7 @@ const products = [
     ]
   },
   {
-    icon: Smartphone,
+    icon: DeviceMobile,
     name: 'Airtime',
     price: '2–10%',
     unit: 'off face value',

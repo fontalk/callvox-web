@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Phone, Building, PhoneX, Smartphone, Globe } from '@phosphor-icons/react';
+import { Phone, Building, PhoneX, DeviceMobile, Globe } from '@phosphor-icons/react';
 
 export default function NumberTypes() {
   const ref = useRef(null);
@@ -29,7 +29,7 @@ export default function NumberTypes() {
       format: '+1 (800) xxx-xxxx',
     },
     {
-      icon: Smartphone,
+      icon: DeviceMobile,
       name: 'Mobile',
       description: 'Mobile-range DIDs for SMS + voice. Available in select markets.',
       format: '+44 7xxx xxxxxx',
