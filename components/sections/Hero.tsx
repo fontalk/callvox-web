@@ -45,7 +45,7 @@ export function Hero() {
       </div>
       
       {/* Content */}
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 lg:pt-48 lg:pb-32">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -100,7 +100,7 @@ export function Hero() {
           <motion.div 
             variants={fadeUp} 
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="mt-10 flex flex-col sm:flex-row gap-4"
+            className="mt-12 flex flex-col sm:flex-row gap-4"
           >
             <Button variant="primary" size="lg">
               Get a Quote &rarr;

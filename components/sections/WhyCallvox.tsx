@@ -26,7 +26,7 @@ export function WhyCallvox() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section ref={ref} className="bg-navy-DEFAULT py-24">
+    <section ref={ref} className="bg-navy-DEFAULT py-32 lg:py-40 noise-overlay">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 32 }}

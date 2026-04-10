@@ -42,7 +42,7 @@ export function ProductGrid() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section ref={ref} className="bg-white py-24">
+    <section ref={ref} className="bg-white py-32 lg:py-40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -59,14 +59,14 @@ export function ProductGrid() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, i) => (
             <motion.div
               key={product.name}
               initial={{ opacity: 0, y: 32 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.1 }}
-              className="bg-white border border-navy-100 rounded-2xl p-8 hover:border-navy-400 hover:shadow-lg transition-all duration-200 group cursor-pointer"
+              className="bg-white border border-navy-100 rounded-2xl p-10 hover:border-cyan-DEFAULT hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1"
             >
               <div className="w-12 h-12 rounded-full bg-navy-50 flex items-center justify-center">
                 <product.icon weight="duotone" className="w-6 h-6 text-navy-600" />

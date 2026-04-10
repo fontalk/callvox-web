@@ -49,6 +49,7 @@ export default function Nav() {
   const [mobileSolutions, setMobileSolutions] = useState(false)
   const [activeDropdown, setActiveDropdown]   = useState<string | null>(null)
   const navRef = useRef<HTMLElement>(null)
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const isCurrentPage = (href: string) => pathname === href || pathname.startsWith(href + '/')
 
@@ -64,12 +65,23 @@ export default function Nav() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  const handleMouseEnter = (name: string) => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
+    setActiveDropdown(name)
+  }
+
+  const handleMouseLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null)
+    }, 150)
+  }
+
   function toggleDropdown(name: string) {
     setActiveDropdown(prev => prev === name ? null : name)
   }
 
   return (
-    <header ref={navRef} className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-navy-100 h-[68px]">
+    <header ref={navRef} className="sticky top-0 z-50 glass border-b border-navy-100/20 h-[68px]">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-6">
 
         {/* Logo */}
@@ -80,19 +92,23 @@ export default function Nav() {
         {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-0.5 flex-1">
 
-          {/* Products mega-menu — click to open, hover to keep open */}
-          <div className="relative">
+          {/* Products mega-menu — hover to open */}
+          <div className="relative group" onMouseEnter={() => handleMouseEnter('Products')} onMouseLeave={handleMouseLeave}>
             <button
               onClick={() => toggleDropdown('Products')}
-              className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1"
               aria-expanded={activeDropdown === 'Products'}
+              className={`px-4 py-2 text-sm font-medium transition-colors flex items-center gap-1 focus-visible:outline-none ${
+                isCurrentPage('/products') ? 'text-cyan-DEFAULT' : 'text-navy-700 hover:text-cyan-DEFAULT'
+              }`}
             >
               Products
-              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-200 ${activeDropdown === 'Products' ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-300 ${activeDropdown === 'Products' ? 'rotate-180' : 'group-hover:rotate-180'}`} />
             </button>
 
             {activeDropdown === 'Products' && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[520px] bg-white rounded-2xl shadow-xl border border-navy-100 p-6 z-50">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[520px] bg-white rounded-2xl shadow-2xl border border-navy-100/20 p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                   onMouseEnter={() => handleMouseEnter('Products')}
+                   onMouseLeave={handleMouseLeave}>
                 <p className="text-[11px] font-bold uppercase tracking-widest text-navy-400 mb-4">All Products</p>
                 <div className="grid grid-cols-1 gap-1">
                   {products.map((p) => {
@@ -129,19 +145,23 @@ export default function Nav() {
             )}
           </div>
 
-          {/* Solutions dropdown — click to open */}
-          <div className="relative">
+          {/* Solutions dropdown — hover to open */}
+          <div className="relative group" onMouseEnter={() => handleMouseEnter('Solutions')} onMouseLeave={handleMouseLeave}>
             <button
               onClick={() => toggleDropdown('Solutions')}
-              className="px-4 py-2 text-sm font-medium text-navy-700 hover:text-cyan-DEFAULT transition-colors flex items-center gap-1"
               aria-expanded={activeDropdown === 'Solutions'}
+              className={`px-4 py-2 text-sm font-medium transition-colors flex items-center gap-1 focus-visible:outline-none ${
+                isCurrentPage('/solutions') ? 'text-cyan-DEFAULT' : 'text-navy-700 hover:text-cyan-DEFAULT'
+              }`}
             >
               Solutions
-              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-200 ${activeDropdown === 'Solutions' ? 'rotate-180' : ''}`} />
+              <CaretDown weight="bold" className={`w-3 h-3 transition-transform duration-300 ${activeDropdown === 'Solutions' ? 'rotate-180' : 'group-hover:rotate-180'}`} />
             </button>
 
             {activeDropdown === 'Solutions' && (
-              <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-2xl shadow-xl border border-navy-100 p-3 z-50">
+              <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-2xl shadow-2xl border border-navy-100/20 p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                   onMouseEnter={() => handleMouseEnter('Solutions')}
+                   onMouseLeave={handleMouseLeave}>
                 {solutions.map((s) => {
                   const Icon = s.icon
                   return (
@@ -194,7 +214,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden absolute top-[68px] left-0 right-0 bg-white border-b border-navy-100 shadow-lg overflow-y-auto max-h-[calc(100vh-68px)]">
+        <div className="lg:hidden absolute top-[68px] left-0 right-0 bg-white border-b border-navy-100/20 shadow-xl overflow-y-auto max-h-[calc(100vh-68px)]">
           <div className="px-4 py-6 space-y-1">
 
             {/* Products accordion */}
