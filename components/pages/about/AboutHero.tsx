@@ -9,7 +9,7 @@ export default function AboutHero() {
         <div className="absolute top-20 right-20 w-64 h-64 bg-cyan-DEFAULT rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container relative z-10">
+      <div className="hero-inner relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

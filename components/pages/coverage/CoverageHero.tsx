@@ -13,14 +13,14 @@ export default function CoverageHero() {
         <div className="absolute top-10 right-10 w-40 h-40 bg-cyan-DEFAULT rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container relative z-10">
+      <div className="hero-inner relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-white font-bold mb-6" style={{ fontSize: '48px', lineHeight: 1.2 }}>
+          <h1 className="text-white font-bold mb-6" style={{ fontSize: 'clamp(36px, 6vw, 56px)', lineHeight: 1.1 }}>
             Global coverage. Emerging-market depth.
           </h1>
 

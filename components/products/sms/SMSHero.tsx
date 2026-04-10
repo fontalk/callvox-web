@@ -33,7 +33,7 @@ export default function SMSHero() {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-DEFAULT rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32">
+      <div className="relative z-10 hero-inner py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function SMSHero() {
               </h1>
             </div>
 
-            <p className="text-navy-200 text-lg max-w-xl">
+            <p className="text-navy-200 text-lg max-w-2xl">
               Wholesale A2P messaging infrastructure for carriers, aggregators and platforms. Direct carrier connections across 200+ countries. 10DLC, TCPA and GDPR compliance built in.
             </p>
 

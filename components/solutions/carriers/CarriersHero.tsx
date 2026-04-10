@@ -7,7 +7,7 @@ import { Button } from '@/components/callvox-ui/Button'
 export default function CarriersHero() {
   return (
     <section className="relative bg-navy-DEFAULT py-20 md:py-28 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="hero-inner">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

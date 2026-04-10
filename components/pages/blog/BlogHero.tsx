@@ -6,7 +6,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react';
 export default function BlogHero() {
   return (
     <section className="bg-white py-16">
-      <div className="container">
+      <div className="hero-inner">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -8,7 +8,7 @@ export default function PricingHero() {
 
   return (
     <section className="bg-white py-20 md:py-24">
-      <div className="container">
+      <div className="hero-inner">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

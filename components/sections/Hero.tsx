@@ -45,7 +45,7 @@ export function Hero() {
       </div>
       
       {/* Content */}
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 lg:pt-48 lg:pb-32">
+      <div className="relative hero-inner pt-32 pb-24 lg:pt-48 lg:pb-32">
         <motion.div
           initial="hidden"
           animate="visible"

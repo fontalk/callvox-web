@@ -14,7 +14,7 @@ const fadeUpVariants = {
 export default function ResellersHero() {
   return (
     <section className="bg-navy-DEFAULT py-24">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="hero-inner">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}

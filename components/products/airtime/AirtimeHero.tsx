@@ -37,7 +37,7 @@ export default function AirtimeHero() {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 hero-inner">
         {/* Breadcrumb */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -76,7 +76,7 @@ export default function AirtimeHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-navy-200 text-lg max-w-2xl mb-8"
+          className="text-navy-200 text-lg max-w-3xl mb-8"
         >
           Wholesale airtime top-up API for diaspora remittance platforms, mobile money operators, and international resellers. Africa, South Asia, Latin America and the Middle East covered.
         </motion.p>

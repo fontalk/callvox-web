@@ -13,7 +13,7 @@ export function ESIMHero() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative hero-inner grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export function ESIMHero() {
             Remote provisioning at scale. No SIM cards. No logistics.
           </h1>
 
-          <p className="text-navy-200 text-lg mb-8 max-w-lg leading-relaxed">
+          <p className="text-navy-200 text-lg mb-8 leading-relaxed">
             GSMA SGP.22 and SGP.32 certified eSIM infrastructure for MVNOs, travel operators, and enterprise IoT. Over-the-air profile delivery. White-label RSP platform available.
           </p>
 

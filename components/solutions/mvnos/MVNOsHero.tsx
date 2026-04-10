@@ -14,7 +14,7 @@ export default function MVNOsHero() {
         <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-DEFAULT rounded-full mix-blend-screen blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative hero-inner w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

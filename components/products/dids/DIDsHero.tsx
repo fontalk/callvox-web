@@ -27,9 +27,9 @@ export default function DIDsHero() {
         <div className="absolute top-20 right-10 w-96 h-96 bg-cyan-DEFAULT rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="hero-inner relative z-10">
         <motion.div
-          className="max-w-4xl"
+          className="w-full"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -69,7 +69,7 @@ export default function DIDsHero() {
       </div>
 
       <motion.div
-        className="container mx-auto px-4 relative z-10 mt-12"
+        className="hero-inner relative z-10 mt-12"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}

@@ -12,7 +12,7 @@ export function VoiceHero() {
 
   return (
     <section className="bg-navy-DEFAULT py-20 md:py-32" style={{ minHeight: '60vh' }}>
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="hero-inner">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
