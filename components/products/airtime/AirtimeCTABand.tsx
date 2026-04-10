@@ -37,7 +37,7 @@ export default function AirtimeCTABand() {
           transition={{ delay: 0.3 }}
           className="flex gap-4 justify-center flex-wrap"
         >
-          <Button variant="primary" className="bg-white text-navy-DEFAULT hover:bg-navy-100">
+          <Button variant="white">
             Get API Access <ArrowRight size={16} className="ml-2" />
           </Button>
           <Button variant="ghost" className="text-white border-white hover:bg-white/10">
