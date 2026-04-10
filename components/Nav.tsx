@@ -81,7 +81,7 @@ export default function Nav() {
   }
 
   return (
-    <header ref={navRef} className="sticky top-0 z-50 glass border-b border-navy-100/20 h-[68px]">
+    <header ref={navRef} className="sticky top-0 z-50 bg-white border-b border-navy-100 h-[68px]">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-6">
 
         {/* Logo */}
