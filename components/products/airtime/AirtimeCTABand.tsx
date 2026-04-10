@@ -40,7 +40,7 @@ export default function AirtimeCTABand() {
           <Button variant="white">
             Get API Access <ArrowRight size={16} className="ml-2" />
           </Button>
-          <Button variant="ghost" className="text-white border-white hover:bg-white/10">
+          <Button variant="white-ghost">
             View full operator list
           </Button>
         </motion.div>

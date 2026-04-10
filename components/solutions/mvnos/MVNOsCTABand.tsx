@@ -28,14 +28,12 @@ export default function MVNOsCTABand() {
             <Button
               variant="primary"
               size="lg"
-              className="bg-cyan-DEFAULT text-white hover:opacity-90"
             >
               Talk to an MVNO specialist →
             </Button>
             <Button
               variant="ghost"
               size="lg"
-              className="text-navy-DEFAULT border-navy-300 hover:bg-navy-50"
             >
               Download MVNO platform guide
             </Button>

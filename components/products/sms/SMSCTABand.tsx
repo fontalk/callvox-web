@@ -28,10 +28,10 @@ export default function SMSCTABand() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
         >
-          <Button variant="primary" className="bg-navy-DEFAULT text-white hover:bg-navy-600">
+          <Button variant="primary">
             Download SMS Rate Card <ArrowRight size={20} weight="bold" className="ml-2" />
           </Button>
-          <Button variant="ghost" className="text-navy-DEFAULT border-navy-DEFAULT hover:bg-navy-50">
+          <Button variant="ghost">
             Talk to a specialist
           </Button>
         </motion.div>

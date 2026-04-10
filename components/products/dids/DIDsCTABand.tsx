@@ -22,10 +22,10 @@ export default function DIDsCTABand() {
             Self-service via portal. API access included on all accounts. Free porting — no lock-in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" className="group">
+            <Button variant="white" className="group">
               Check Number Availability <ArrowRight className="inline ml-2 transition-transform group-hover:translate-x-1" size={18} />
             </Button>
-            <Button variant="ghost">Get wholesale rates</Button>
+            <Button variant="white-ghost">Get wholesale rates</Button>
           </div>
         </motion.div>
       </div>

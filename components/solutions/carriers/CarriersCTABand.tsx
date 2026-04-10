@@ -26,11 +26,11 @@ export default function CarriersCTABand() {
             Request our interconnect details, rate deck, and SLA document. No sales call required to access technical specifications.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button variant="primary" size="lg">
+            <Button variant="white" size="lg">
               Request interconnect details
               <CaretRight size={18} weight="fill" />
             </Button>
-            <Button variant="ghost" size="lg">
+            <Button variant="white-ghost" size="lg">
               Download rate deck
             </Button>
           </div>

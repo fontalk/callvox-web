@@ -27,14 +27,12 @@ export default function DeveloperCTABand() {
             <Button
               variant="primary"
               size="lg"
-              className="bg-navy-DEFAULT text-white hover:bg-navy-700"
             >
               Get API Keys <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
             <Button
-              variant="outline"
+              variant="ghost"
               size="lg"
-              className="border-navy-DEFAULT text-navy-DEFAULT hover:bg-navy-50/40"
             >
               Read the Docs <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>

@@ -27,14 +27,12 @@ export default function PricingCTABand() {
             <Button
               variant="primary"
               size="lg"
-              className="bg-cyan-DEFAULT text-navy-DEFAULT hover:bg-cyan-DEFAULT/90"
             >
               Request a rate deck <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
             <Button
-              variant="outline"
+              variant="ghost"
               size="lg"
-              className="border-navy-DEFAULT text-navy-DEFAULT hover:bg-navy-50/40"
             >
               Talk to sales
             </Button>
