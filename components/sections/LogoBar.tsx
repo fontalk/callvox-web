@@ -29,18 +29,6 @@ export function LogoBar() {
           Trusted by carriers, MVNOs & resellers in 150+ countries
         </p>
         
-        {/* Desktop: Static Grid */}
-        <div className="hidden md:flex justify-center items-center gap-8 max-w-5xl mx-auto px-4">
-          {partners.map((partner) => (
-            <div 
-              key={partner}
-              className="w-[120px] h-12 flex items-center justify-center text-navy-200 text-xs font-medium"
-            >
-              {partner}
-            </div>
-          ))}
-        </div>
-        
         {/* Mobile: Marquee */}
         <div className="md:hidden relative">
           <div className="flex animate-marquee">
