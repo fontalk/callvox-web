@@ -9,6 +9,7 @@ const products = [
     name: 'Voice',
     price: '0.01',
     unit: '/ min',
+    showFrom: true,
     features: [
       'Direct CLI routes',
       '500+ destinations',
@@ -19,7 +20,8 @@ const products = [
     icon: ChatCircle,
     name: 'SMS',
     price: '0.007',
-    unit: '/ message',
+    unit: '/ msg',
+    showFrom: true,
     features: [
       '10DLC included',
       '200+ countries',
@@ -30,7 +32,8 @@ const products = [
     icon: DeviceMobile,
     name: 'Airtime',
     price: '2–10%',
-    unit: 'off face value',
+    unit: 'discounts',
+    showFrom: false,
     features: [
       '800+ operators',
       '<3s delivery',
@@ -42,6 +45,7 @@ const products = [
     name: 'eSIM',
     price: 'Custom',
     unit: 'pricing',
+    showFrom: false,
     features: [
       'Per-profile + platform fee',
       'White-label available',
@@ -52,7 +56,8 @@ const products = [
     icon: PhoneIncoming,
     name: 'DIDs',
     price: '1.50',
-    unit: '/ number / month',
+    unit: '/ month',
+    showFrom: true,
     features: [
       '90+ countries',
       'Free porting',
@@ -81,7 +86,7 @@ export default function ProductPricingCards() {
                 <h3 className="text-navy-DEFAULT font-bold text-xl mb-3">{product.name}</h3>
                 
                 <div className="mb-6">
-                  <span className="text-navy-DEFAULT font-bold text-3xl">from {product.price}</span>
+                  <span className="text-navy-DEFAULT font-bold" style={{ fontSize: '20px' }}>{product.showFrom ? 'from ' : ''}{product.price}</span>
                   <span className="text-navy-400 text-base ml-2">{product.unit}</span>
                 </div>
 
