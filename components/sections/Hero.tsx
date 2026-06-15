@@ -103,7 +103,7 @@ export function Hero() {
             className="mt-12 flex flex-col sm:flex-row gap-4"
           >
             <Button variant="primary" size="lg">
-              Get a Quote &rarr;
+              Work with us &rarr;
             </Button>
             <Button variant="ghost" size="lg">
               Explore Products

@@ -23,7 +23,7 @@ const audiences = [
   {
     name: 'Enterprises',
     points: ['40–70% cost savings over legacy PSTN', 'HD voice + compliance certifications'],
-    cta: 'Get a quote',
+    cta: 'Work with us',
   },
 ]
 

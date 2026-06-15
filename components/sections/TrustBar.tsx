@@ -65,7 +65,7 @@ export function TrustBar() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button variant="white" size="lg">
-              Get a Quote &rarr;
+              Work with us &rarr;
             </Button>
             <Button variant="white-ghost" size="lg">
               Download rate deck

@@ -198,8 +198,7 @@ export default function Nav() {
 
         {/* Desktop CTAs */}
         <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
-          <Button variant="ghost" size="md">Login</Button>
-          <Button variant="primary" size="md">Get a Quote</Button>
+          <Button variant="primary" size="md">Work with us</Button>
         </div>
 
         {/* Mobile hamburger */}
@@ -285,8 +284,7 @@ export default function Nav() {
 
             {/* CTAs */}
             <div className="pt-4 border-t border-navy-100 space-y-3 mt-4">
-              <Button variant="ghost" size="lg" className="w-full">Login</Button>
-              <Button variant="primary" size="lg" className="w-full">Get a Quote</Button>
+              <Button variant="primary" size="lg" className="w-full">Work with us</Button>
             </div>
           </div>
         </div>

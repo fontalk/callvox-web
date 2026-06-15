@@ -43,7 +43,7 @@ export default function EnterprisesHero() {
               variant="white"
               size="lg"
             >
-              Get a Quote <ArrowRight size={20} className="ml-2" weight="bold" />
+              Work with us <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
             <Button
               variant="white-ghost"
