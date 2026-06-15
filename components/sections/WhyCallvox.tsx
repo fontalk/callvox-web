@@ -10,7 +10,7 @@ const proofs = [
     body: 'Carrier-grade infrastructure with geo-redundant PoPs, 24/7 NOC support, and contractual SLA penalties. Your reputation depends on ours.',
   },
   {
-    number: '17 years',
+    number: '2 decades',
     label: 'Emerging-market depth',
     body: 'Direct routes across Latin America, Africa, South Asia & the Middle East — the corridors where prepaid mobile dominates and voice termination demand grows fastest.',
   },

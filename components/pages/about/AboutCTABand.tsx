@@ -16,7 +16,7 @@ export default function AboutCTABand() {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="text-white font-bold text-4xl md:text-5xl mb-6">
-            17 years of wholesale experience. One platform.
+            2 decades of wholesale experience. One platform.
           </h2>
 
           <p className="text-navy-200 text-lg mb-12 leading-relaxed">

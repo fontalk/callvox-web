@@ -6,7 +6,7 @@ import { Button } from '@/components/callvox-ui/Button'
 
 const stats = [
   { value: '500+', label: 'Routes' },
-  { value: '18 years', label: 'Track record' },
+  { value: '2 decades', label: 'Track record' },
   { value: '99.99%', label: 'Uptime SLA' },
   { value: '150+', label: 'Countries' },
 ]

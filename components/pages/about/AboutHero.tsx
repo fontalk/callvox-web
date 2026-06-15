@@ -23,7 +23,7 @@ export default function AboutHero() {
           </div>
 
           <h1 className="text-white font-bold mb-6" style={{ fontSize: 'clamp(36px, 8vw, 52px)' }}>
-            18 years in the markets others treat as afterthoughts.
+            2 decades in the markets others treat as afterthoughts.
           </h1>
 
           <p className="text-navy-200 text-lg leading-relaxed max-w-2xl mx-auto">
