@@ -7,7 +7,6 @@ import { Button } from '@/components/callvox-ui/Button'
 
 const certifications = [
   'ISO 27001',
-  'SOC 2 Type II',
   'STIR/SHAKEN',
   'GDPR Compliant',
   '10DLC Ready',

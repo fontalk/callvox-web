@@ -39,7 +39,6 @@ const simpleLinks = [
   { name: 'Coverage',   href: '/coverage' },
   { name: 'Developers', href: '/developers' },
   { name: 'Resources',  href: '/resources' },
-  { name: 'Pricing',    href: '/pricing' },
 ]
 
 export default function Nav() {

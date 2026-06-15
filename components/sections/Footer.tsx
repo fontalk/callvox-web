@@ -28,7 +28,6 @@ const footerLinks = {
     links: [
       { label: 'About', href: '/about' },
       { label: 'Coverage', href: '/coverage' },
-      { label: 'Pricing', href: '/pricing' },
       { label: 'Developers', href: '/developers' },
       { label: 'Resources', href: '/resources' },
     ],
@@ -116,7 +115,6 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs text-navy-400">
               <li>✓ ISO 27001</li>
-              <li>✓ SOC 2 Type II</li>
               <li>✓ STIR/SHAKEN</li>
               <li>✓ GDPR Compliant</li>
             </ul>

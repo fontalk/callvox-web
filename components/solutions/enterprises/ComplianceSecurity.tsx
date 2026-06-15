@@ -10,11 +10,6 @@ const compliances = [
     detail: 'annual audit'
   },
   {
-    title: 'SOC 2 Type II',
-    description: 'Security, availability, confidentiality controls',
-    detail: 'available on NDA'
-  },
-  {
     title: 'GDPR / HIPAA',
     description: 'Data processing agreements available',
     detail: 'HIPAA BAA on enterprise tier'

@@ -11,7 +11,7 @@ const features = [
   },
   {
     icon: ShieldCheck,
-    title: 'ISO 27001 + SOC 2',
+    title: 'ISO 27001 Certified',
     description: 'Certified security posture. Data processing agreements for GDPR compliance. HIPAA guidance available.'
   },
   {
