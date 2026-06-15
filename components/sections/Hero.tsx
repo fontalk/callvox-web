@@ -52,11 +52,7 @@ export function Hero() {
           transition={{ staggerChildren: 0.08 }}
         >
           {/* Eyebrow */}
-          <motion.div variants={fadeUp} transition={{ duration: 0.5, ease: 'easeOut' }}>
-            <Badge variant="default" className="text-xs">
-              Trusted by 150+ carriers & MVNOs
-            </Badge>
-          </motion.div>
+
           
           {/* Headline */}
           <motion.h1 
