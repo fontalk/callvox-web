@@ -42,9 +42,6 @@ export default function FoundingStory() {
         >
           {timeline.map((item, idx) => (
             <div key={idx} className="relative">
-              {idx < timeline.length - 1 && (
-                <div className="hidden md:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-cyan-DEFAULT/40 to-transparent"></div>
-              )}
               <div className="relative z-10 bg-cyan-DEFAULT/10 border border-cyan-DEFAULT/30 rounded-lg p-6">
                 <div className="text-cyan-DEFAULT font-bold text-2xl mb-2">{item.year}</div>
                 <p className="text-navy-600">{item.label}</p>

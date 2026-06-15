@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { number: '17', label: 'years', description: 'Track record. Founded 2007, operating continuously' },
+  { number: '18', label: 'years', description: 'Track record. Founded 2007, operating continuously' },
   { number: '500+', label: 'direct routes', description: 'Voice termination across 4 continents' },
   { number: '800+', label: 'operators', description: 'Airtime top-up coverage' },
   { number: '90+', label: 'countries', description: 'DID number availability' },
