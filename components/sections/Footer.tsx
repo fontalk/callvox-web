@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { LinkedinLogo, XLogo } from '@phosphor-icons/react'
 
 const footerLinks = {
   products: {
@@ -60,14 +59,6 @@ export function Footer() {
             <p className="text-sm text-navy-300 mt-6 max-w-xs leading-relaxed">
               The unified wholesale platform for the world&apos;s fastest-growing markets.
             </p>
-            <div className="flex items-center gap-4 mt-8">
-              <a href="https://linkedin.com/company/callvox" target="_blank" rel="noopener noreferrer" className="text-navy-400 hover:text-cyan-DEFAULT transition-colors" aria-label="LinkedIn">
-                <LinkedinLogo weight="fill" className="w-5 h-5" />
-              </a>
-              <a href="https://x.com/callvoxnet" target="_blank" rel="noopener noreferrer" className="text-navy-400 hover:text-cyan-DEFAULT transition-colors" aria-label="X (Twitter)">
-                <XLogo weight="fill" className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Products Column */}
