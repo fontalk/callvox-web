@@ -71,7 +71,7 @@ export function PricingModel() {
             All rates vary by volume tier, route type, and destination.
           </p>
           <button className="inline-block bg-navy-DEFAULT hover:bg-navy-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
-            Get a custom rate deck →
+            Talk to a specialist →
           </button>
         </motion.div>
       </div>

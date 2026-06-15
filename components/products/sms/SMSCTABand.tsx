@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/callvox-ui/Button';
 
 export default function SMSCTABand() {
@@ -17,7 +16,7 @@ export default function SMSCTABand() {
         >
           <h2 className="text-navy-DEFAULT font-semibold text-4xl">Stop losing revenue to failed deliveries.</h2>
           <p className="text-navy-600 text-lg">
-            Get a rate card and talk to a messaging specialist within 1 business day.
+            Talk to a messaging specialist within 1 business day.
           </p>
         </motion.div>
 
@@ -29,9 +28,6 @@ export default function SMSCTABand() {
           className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
         >
           <Button variant="primary">
-            Download SMS Rate Card <ArrowRight size={20} weight="bold" className="ml-2" />
-          </Button>
-          <Button variant="ghost">
             Talk to a specialist
           </Button>
         </motion.div>

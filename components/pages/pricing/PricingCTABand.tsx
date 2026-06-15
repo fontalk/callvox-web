@@ -28,7 +28,7 @@ export default function PricingCTABand() {
               variant="primary"
               size="lg"
             >
-              Request a rate deck <ArrowRight size={20} className="ml-2" weight="bold" />
+              Talk to a specialist <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
             <Button
               variant="ghost"

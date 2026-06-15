@@ -72,7 +72,7 @@ export default function SMSPricing() {
           className="flex justify-center pt-8"
         >
           <Button variant="primary" className="bg-white text-navy-DEFAULT hover:bg-gray-100">
-            Get a full rate card <ArrowRight size={20} weight="bold" className="ml-2" />
+            Talk to a specialist <ArrowRight size={20} weight="bold" className="ml-2" />
           </Button>
         </motion.div>
       </div>
