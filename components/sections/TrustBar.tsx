@@ -67,9 +67,6 @@ export function TrustBar() {
             <Button variant="white" size="lg">
               Work with us &rarr;
             </Button>
-            <Button variant="white-ghost" size="lg">
-              Download rate deck
-            </Button>
           </div>
         </motion.div>
       </div>

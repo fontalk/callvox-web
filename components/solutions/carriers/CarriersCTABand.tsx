@@ -30,9 +30,6 @@ export default function CarriersCTABand() {
               Request interconnect details
               <CaretRight size={18} weight="fill" />
             </Button>
-            <Button variant="white-ghost" size="lg">
-              Download rate deck
-            </Button>
           </div>
         </motion.div>
       </div>

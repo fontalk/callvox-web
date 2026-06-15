@@ -46,9 +46,6 @@ export default function CarriersHero() {
               Request Interconnect Details
               <CaretRight size={18} weight="fill" />
             </Button>
-            <Button variant="white-ghost" size="lg">
-              Download Rate Deck
-            </Button>
           </div>
         </motion.div>
       </div>
