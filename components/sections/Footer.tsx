@@ -36,7 +36,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-navy-900 text-navy-200 pt-32 pb-12 noise-overlay border-t border-navy-800/50">
+    <footer className="bg-[#122C51] text-navy-200 pt-32 pb-12 border-t border-navy-800/50">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-10 mb-16">
           {/* Brand Column */}
