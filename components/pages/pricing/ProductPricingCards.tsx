@@ -43,11 +43,11 @@ const products = [
   {
     icon: SimCard,
     name: 'eSIM',
-    price: 'Custom',
+    price: 'custom',
     unit: 'pricing',
     showFrom: false,
     features: [
-      'Per-profile + platform fee',
+      'Profile + platform',
       'White-label or API',
       'GSMA certified'
     ]
