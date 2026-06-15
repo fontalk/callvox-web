@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 const timeline = [
   { year: '2007', label: 'Founded as voice-only carrier, LatAm & Africa focus' },
   { year: '2012', label: '100+ direct routes, expanded to South Asia & MENA' },
-  { year: '2019', label: 'Launched SMS / A2P messaging product' },
-  { year: '2024', label: 'Full platform: eSIM, Airtime, DIDs added' }
+  { year: '2023', label: 'Launched SMS / A2P messaging product' },
+  { year: '2026', label: 'Full platform: eSIM, Airtime, DIDs added' }
 ];
 
 export default function FoundingStory() {
