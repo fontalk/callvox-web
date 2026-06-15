@@ -30,12 +30,6 @@ export default function PricingCTABand() {
             >
               Talk to a specialist <ArrowRight size={20} className="ml-2" weight="bold" />
             </Button>
-            <Button
-              variant="ghost"
-              size="lg"
-            >
-              Talk to sales
-            </Button>
           </div>
         </motion.div>
       </div>
