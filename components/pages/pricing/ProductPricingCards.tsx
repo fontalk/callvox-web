@@ -13,7 +13,7 @@ const products = [
     features: [
       'Direct CLI routes',
       '500+ destinations',
-      'Volume tiers available'
+      'Volume tiers'
     ]
   },
   {
@@ -37,7 +37,7 @@ const products = [
     features: [
       '800+ operators',
       '<3s delivery',
-      'Webhook confirmation'
+      'Webhook confirms'
     ]
   },
   {
@@ -48,7 +48,7 @@ const products = [
     showFrom: false,
     features: [
       'Per-profile + platform fee',
-      'White-label available',
+      'White-label or API',
       'GSMA certified'
     ]
   },
