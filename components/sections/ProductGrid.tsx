@@ -25,7 +25,7 @@ const products = [
   },
   {
     icon: SimCard,
-    name: 'eSIM',
+    name: 'eSIMs',
     pitch: 'Wholesale eSIM provisioning',
     stat: 'GSMA SGP.22/32 certified · IoT-ready',
   },

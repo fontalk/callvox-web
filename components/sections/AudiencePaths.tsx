@@ -40,7 +40,6 @@ export function AudiencePaths() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="text-[11px] uppercase tracking-[2px] text-cyan-DEFAULT mb-3">Who We Serve</p>
           <h2 className="text-[40px] font-semibold text-navy-DEFAULT">
             Built for your business model.
           </h2>
