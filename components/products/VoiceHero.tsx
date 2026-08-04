@@ -69,7 +69,7 @@ export function VoiceHero() {
               className="flex flex-wrap gap-4"
             >
               <button className="bg-white text-navy-DEFAULT px-8 py-3 rounded-lg font-semibold hover:bg-navy-50 transition-colors">
-                Get Voice Rates →
+                Get Voice Rates
               </button>
             </motion.div>
           </motion.div>

@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/callvox-ui/Button';
 
 export default function AboutCTABand() {
@@ -28,7 +27,7 @@ export default function AboutCTABand() {
               variant="white"
               size="lg"
             >
-              Get in touch <ArrowRight size={20} className="ml-2" weight="bold" />
+              Get in touch
             </Button>
             <Button
               variant="white-ghost"

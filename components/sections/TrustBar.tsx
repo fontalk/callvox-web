@@ -45,7 +45,7 @@ export function TrustBar() {
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-dot" />
           <span className="text-[13px] text-navy-600">All systems operational</span>
           <a href="#" className="text-[13px] text-cyan-DEFAULT hover:underline ml-1">
-            status.callvox.net &rarr;
+            status.callvox.net
           </a>
         </motion.div>
 
@@ -64,7 +64,7 @@ export function TrustBar() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button variant="white" size="lg">
-              Work with us &rarr;
+              Work with us
             </Button>
           </div>
         </motion.div>

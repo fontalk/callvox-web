@@ -29,7 +29,7 @@ export default function MVNOsCTABand() {
               variant="primary"
               size="lg"
             >
-              Talk to an MVNO specialist →
+              Talk to an MVNO specialist
             </Button>
             <Button
               variant="ghost"

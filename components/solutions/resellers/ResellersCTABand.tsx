@@ -47,7 +47,7 @@ export default function ResellersCTABand() {
           className="flex gap-4 justify-center flex-wrap"
         >
           <button className="bg-navy-DEFAULT text-white px-8 py-3 font-semibold rounded-lg hover:bg-navy-800 transition">
-            Become a partner →
+            Become a partner
           </button>
           <button className="border-2 border-navy-300 text-navy-DEFAULT px-8 py-3 font-semibold rounded-lg hover:bg-navy-50 transition">
             See white-label options

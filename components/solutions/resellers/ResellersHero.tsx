@@ -65,7 +65,7 @@ export default function ResellersHero() {
           className="flex gap-4"
         >
           <button className="bg-white text-navy-DEFAULT px-8 py-3 font-semibold rounded-lg hover:bg-navy-100 transition">
-            Become a Partner →
+            Become a Partner
           </button>
           <button className="border-2 border-white text-white px-8 py-3 font-semibold rounded-lg hover:bg-white/10 transition">
             View White-Label Options

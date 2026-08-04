@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 
 const sdks = [
   { lang: 'Python', cmd: 'pip install callvox' },
@@ -41,7 +40,7 @@ export default function SDKQuickstarts() {
                 {sdk.cmd}
               </div>
               <a href="#" className="text-cyan-DEFAULT font-semibold text-sm flex items-center justify-center gap-2 hover:gap-3 transition-all">
-                View quickstart <ArrowRight size={16} />
+                View quickstart
               </a>
             </motion.div>
           ))}

@@ -28,13 +28,13 @@ export default function DeveloperCTABand() {
               variant="primary"
               size="lg"
             >
-              Get API Keys <ArrowRight size={20} className="ml-2" weight="bold" />
+              Get API Keys
             </Button>
             <Button
               variant="ghost"
               size="lg"
             >
-              Read the Docs <ArrowRight size={20} className="ml-2" weight="bold" />
+              Read the Docs
             </Button>
           </div>
         </motion.div>

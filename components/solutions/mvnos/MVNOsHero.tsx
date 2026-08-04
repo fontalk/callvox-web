@@ -44,7 +44,7 @@ export default function MVNOsHero() {
               variant="white"
               size="lg"
             >
-              Talk to an MVNO Specialist →
+              Talk to an MVNO Specialist
             </Button>
             <Button
               variant="ghost"

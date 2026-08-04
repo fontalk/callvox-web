@@ -89,10 +89,10 @@ export default function AirtimeHero() {
           className="flex gap-4 flex-wrap"
         >
           <Button variant="white">
-            Get API Access <ArrowRight size={16} className="ml-2" />
+            Get API Access
           </Button>
           <Button variant="ghost" className="text-white border-white hover:bg-white/10">
-            View Operator Coverage <ArrowRight size={16} className="ml-2" />
+            View Operator Coverage
           </Button>
         </motion.div>
       </div>

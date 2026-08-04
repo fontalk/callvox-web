@@ -100,7 +100,7 @@ export default function ProductPricingCards() {
                 </ul>
 
                 <a href="#" className="text-cyan-DEFAULT font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                  Get rates <ArrowRight size={16} />
+                  Get rates
                 </a>
               </motion.div>
             );

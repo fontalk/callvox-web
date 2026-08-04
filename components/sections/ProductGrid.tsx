@@ -75,7 +75,7 @@ export function ProductGrid() {
               <p className="text-[15px] text-navy-600 mt-2 leading-relaxed">{product.pitch}</p>
               <p className="text-[13px] font-semibold text-cyan-DEFAULT mt-4">{product.stat}</p>
               <p className="text-[13px] text-navy-600 group-hover:text-cyan-DEFAULT mt-6 transition-colors">
-                Learn more &rarr;
+                Learn more
               </p>
             </motion.div>
           ))}

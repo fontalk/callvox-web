@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/callvox-ui/Button';
 
 export default function PricingCTABand() {
@@ -28,7 +27,7 @@ export default function PricingCTABand() {
               variant="primary"
               size="lg"
             >
-              Talk to a specialist <ArrowRight size={20} className="ml-2" weight="bold" />
+              Talk to a specialist
             </Button>
           </div>
         </motion.div>

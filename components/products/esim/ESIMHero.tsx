@@ -35,7 +35,7 @@ export function ESIMHero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="px-6 py-3 bg-white text-navy-DEFAULT font-semibold rounded-lg hover:bg-navy-50 transition-colors">
-              Talk to an eSIM Specialist →
+              Talk to an eSIM Specialist
             </button>
             <button className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-navy-900 transition-colors">
               Download Buyer's Guide

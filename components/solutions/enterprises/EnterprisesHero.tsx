@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/callvox-ui/Button';
 
 export default function EnterprisesHero() {
@@ -43,7 +42,7 @@ export default function EnterprisesHero() {
               variant="white"
               size="lg"
             >
-              Work with us <ArrowRight size={20} className="ml-2" weight="bold" />
+              Work with us
             </Button>
             <Button
               variant="white-ghost"

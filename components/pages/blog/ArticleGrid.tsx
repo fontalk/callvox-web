@@ -63,7 +63,7 @@ export default function ArticleGrid() {
               </div>
 
               <a href="#" className="text-cyan-DEFAULT font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-3">
-                Read article <ArrowRight size={14} />
+                Read article
               </a>
             </motion.div>
           ))}

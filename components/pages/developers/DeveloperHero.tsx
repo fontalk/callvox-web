@@ -38,14 +38,14 @@ export default function DeveloperHero() {
                 size="lg"
                 className="bg-cyan-DEFAULT text-navy-DEFAULT hover:bg-cyan-DEFAULT/90"
               >
-                Get API Keys <ArrowRight size={20} className="ml-2" weight="bold" />
+                Get API Keys
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white/10"
               >
-                Read the Docs <ArrowRight size={20} className="ml-2" weight="bold" />
+                Read the Docs
               </Button>
             </div>
           </motion.div>

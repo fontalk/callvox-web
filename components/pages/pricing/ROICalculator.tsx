@@ -117,7 +117,7 @@ export default function ROICalculator() {
                 </div>
 
                 <a href="#" className="inline-flex items-center gap-2 text-cyan-DEFAULT font-semibold hover:gap-3 transition-all mt-6">
-                  Get an exact quote based on your actual routes <ArrowRight size={18} />
+                  Get an exact quote based on your actual routes
                 </a>
               </div>
             </motion.div>

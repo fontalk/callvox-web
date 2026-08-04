@@ -38,7 +38,7 @@ export default function AirtimeCTABand() {
           className="flex gap-4 justify-center flex-wrap"
         >
           <Button variant="white">
-            Get API Access <ArrowRight size={16} className="ml-2" />
+            Get API Access
           </Button>
           <Button variant="white-ghost">
             View full operator list

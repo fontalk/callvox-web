@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight } from '@phosphor-icons/react';
 
 export default function ROICalculatorCallout() {
   return (
@@ -25,7 +24,7 @@ export default function ROICalculatorCallout() {
           href="/pricing#calculator"
           className="inline-flex items-center px-6 py-3 bg-navy-DEFAULT text-white font-medium rounded-lg hover:bg-navy-800 transition-colors"
         >
-          Use the ROI calculator <ArrowRight size={20} className="ml-2" weight="bold" />
+          Use the ROI calculator
         </a>
       </motion.div>
     </section>

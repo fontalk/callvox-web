@@ -93,7 +93,7 @@ export default function OnboardingFlow() {
             size="lg"
             className="bg-navy-DEFAULT text-white hover:bg-navy-700"
           >
-            Start building <ArrowRight size={20} className="ml-2" weight="bold" />
+            Start building
           </Button>
         </motion.div>
       </div>

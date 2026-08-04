@@ -61,7 +61,7 @@ export default function SMSHero() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button variant="white" className="">
-                Talk to a specialist <ArrowRight size={20} weight="bold" className="ml-2" />
+                Talk to a specialist
               </Button>
               <Button variant="ghost" className="text-white border-white hover:bg-white/10">
                 View API Docs

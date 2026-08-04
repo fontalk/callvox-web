@@ -39,7 +39,7 @@ export default function FeaturedPost() {
               </div>
 
               <a href="#" className="text-cyan-DEFAULT font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Read article <ArrowRight size={18} />
+                Read article
               </a>
             </div>
 

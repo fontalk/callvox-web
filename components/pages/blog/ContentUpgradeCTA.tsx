@@ -34,7 +34,7 @@ export default function ContentUpgradeCTA() {
               className="flex-1 px-4 py-3 rounded-lg bg-white text-navy-DEFAULT placeholder-navy-400 focus:outline-none"
             />
             <button className="px-6 py-3 rounded-lg bg-white text-navy-DEFAULT font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
-              Subscribe <ArrowRight size={18} weight="bold" />
+              Subscribe
             </button>
           </div>
 

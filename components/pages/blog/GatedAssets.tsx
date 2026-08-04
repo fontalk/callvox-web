@@ -52,7 +52,7 @@ export default function GatedAssets() {
                     </p>
                   </div>
                   <a href="#" className="text-cyan-DEFAULT font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-6">
-                    Download PDF <ArrowRight size={14} />
+                    Download PDF
                   </a>
                 </div>
               </motion.div>

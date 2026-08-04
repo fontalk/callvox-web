@@ -64,7 +64,7 @@ export function AudiencePaths() {
                 ))}
               </div>
               <a href="#" className="inline-block mt-6 text-[13px] font-semibold text-cyan-DEFAULT hover:underline">
-                &rarr; {audience.cta}
+                {audience.cta}
               </a>
             </motion.div>
           ))}

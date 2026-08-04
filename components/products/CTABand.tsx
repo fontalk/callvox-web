@@ -21,7 +21,7 @@ export function CTABand() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-white text-navy-DEFAULT px-8 py-3 rounded-lg font-semibold hover:bg-navy-50 transition-colors">
-              Get Voice Rates →
+              Get Voice Rates
             </button>
             <button className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
               Talk to a carrier specialist

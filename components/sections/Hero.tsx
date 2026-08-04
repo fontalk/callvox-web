@@ -99,7 +99,7 @@ export function Hero() {
             className="mt-12 flex flex-col sm:flex-row gap-4"
           >
             <Button variant="primary" size="lg">
-              Work with us &rarr;
+              Work with us
             </Button>
             <Button variant="ghost" size="lg">
               Explore Products
