@@ -92,7 +92,7 @@ export function VoiceHero() {
                     className="text-center"
                   >
                     <p className="text-3xl md:text-4xl font-bold text-cyan-DEFAULT mb-2">{stat.value}</p>
-                    <p className="text-sm text-navy-300">{stat.label}</p>
+                    <p className="text-sm text-white">{stat.label}</p>
                   </motion.div>
                 ))}
               </div>
@@ -117,7 +117,7 @@ export function VoiceHero() {
                 className="text-center"
               >
                 <p className="text-2xl md:text-3xl font-bold text-cyan-DEFAULT mb-2">{stat.value}</p>
-                <p className="text-xs md:text-sm text-navy-300">{stat.label}</p>
+                <p className="text-xs md:text-sm text-white">{stat.label}</p>
               </motion.div>
             ))}
           </div>
