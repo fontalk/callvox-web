@@ -32,7 +32,7 @@ export function AudiencePaths() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section ref={ref} className="bg-white py-24">
+    <section ref={ref} className="bg-white pt-24 pb-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
