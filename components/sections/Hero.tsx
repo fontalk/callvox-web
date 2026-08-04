@@ -67,7 +67,7 @@ export function Hero() {
           <motion.p 
             variants={fadeUp} 
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="mt-6 text-xl text-navy-600 leading-relaxed max-w-2xl"
+            className="mt-6 text-xl text-navy-600 leading-relaxed"
           >
             Wholesale voice, messaging, airtime, eSIM & DIDs — unified
             for carriers, MVNOs & resellers in the world&apos;s fastest-growing markets.

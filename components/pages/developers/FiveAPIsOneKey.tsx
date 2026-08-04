@@ -32,7 +32,7 @@ export default function FiveAPIsOneKey() {
           <h2 className="text-navy-DEFAULT font-bold text-5xl mb-4">
             Every product. One API key.
           </h2>
-          <p className="text-navy-600 text-lg max-w-2xl">
+          <p className="text-navy-600 text-lg">
             Authenticate once. Access all five services through a unified REST API. Each product has its own endpoint namespace — use one, some, or all.
           </p>
         </motion.div>

@@ -34,7 +34,7 @@ export function HowItWorks() {
         >
           <p className="text-xs uppercase tracking-widest text-cyan-DEFAULT font-medium mb-4">How It Works</p>
           <h2 className="text-4xl md:text-5xl font-semibold text-navy-DEFAULT mb-6">Direct. Not aggregated.</h2>
-          <p className="text-base md:text-lg text-navy-600 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-navy-600 leading-relaxed">
             Most wholesale carriers aggregate routes through intermediaries. Every hop adds latency, degrades ASR, and erodes CLI. Callvox operates direct interconnects — the route from your network to the terminating carrier is as short as physically possible.
           </p>
         </motion.div>

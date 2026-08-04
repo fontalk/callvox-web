@@ -66,7 +66,7 @@ export default function AirtimeHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-white font-bold leading-tight mb-4 text-balance"
+          className="text-white font-bold leading-tight mb-4"
           style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}
         >
           800+ operators. Sub-3-second delivery. Built for remittance corridors.
@@ -77,7 +77,7 @@ export default function AirtimeHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-navy-200 text-lg max-w-3xl mb-8"
+          className="text-navy-200 text-lg mb-8"
         >
           Wholesale airtime top-up API for diaspora remittance platforms, mobile money operators, and international resellers. Africa, South Asia, Latin America and the Middle East covered.
         </motion.p>

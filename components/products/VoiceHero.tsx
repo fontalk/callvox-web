@@ -56,7 +56,7 @@ export function VoiceHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl text-navy-200 mb-8 max-w-xl leading-relaxed"
+              className="text-lg md:text-xl text-navy-200 mb-8 leading-relaxed"
             >
               500+ direct voice routes across Africa, Latin America, South Asia & the Middle East. Tier-1 quality without Tier-1 procurement cycles.
             </motion.p>

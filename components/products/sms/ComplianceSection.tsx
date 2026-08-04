@@ -30,7 +30,7 @@ export default function ComplianceSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-2xl"
+          className="max-w-3xl"
         >
           <div className="mb-6">
             <span className="text-cyan-DEFAULT text-xs font-semibold uppercase tracking-wider">Compliance</span>

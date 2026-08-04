@@ -22,7 +22,7 @@ export default function AirtimeCoverageHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          className="text-white font-bold leading-tight mb-4 text-balance"
+          className="text-white font-bold leading-tight mb-4"
           style={{ fontSize: 'clamp(32px, 4.5vw, 48px)' }}
         >
           Operator coverage, by corridor.
@@ -32,7 +32,7 @@ export default function AirtimeCoverageHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-navy-200 text-lg max-w-2xl mb-10"
+          className="text-navy-200 text-lg mb-10"
         >
           {live} operators are live today across {countries} countries. {comingSoon} more are in
           active onboarding — we don&apos;t treat &quot;coming soon&quot; the same as &quot;live.&quot;

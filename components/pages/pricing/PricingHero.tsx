@@ -17,7 +17,7 @@ export default function PricingHero() {
             Transparent pricing. No surprises.
           </h1>
 
-          <p className="text-navy-600 text-lg md:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-navy-600 text-lg md:text-xl mb-12 leading-relaxed max-w-4xl mx-auto">
             Wholesale per-unit pricing across all five services. Volume discounts apply automatically. No setup fees on any product.
           </p>
 

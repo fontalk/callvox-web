@@ -26,7 +26,7 @@ export default function AirtimePricingTeaser() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.2 }}
-          className="text-navy-600 max-w-2xl mx-auto mb-8"
+          className="text-navy-600 max-w-3xl mx-auto mb-8"
         >
           Starter, Growth, and Enterprise tiers based on monthly transaction volume — exact
           commission and FX spreads come in your rate deck.

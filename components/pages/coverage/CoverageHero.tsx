@@ -24,7 +24,7 @@ export default function CoverageHero() {
             Global coverage. Emerging-market depth.
           </h1>
 
-          <p className="text-navy-200 text-lg leading-relaxed mb-12 max-w-3xl mx-auto">
+          <p className="text-navy-200 text-lg leading-relaxed mb-12 max-w-4xl mx-auto">
             500+ voice routes, 800+ airtime operators, DIDs in 90+ countries. Built for the corridors that matter most.
           </p>
 

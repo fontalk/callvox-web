@@ -55,7 +55,7 @@ export default function SMSHero() {
               </h1>
             </div>
 
-            <p className="text-navy-200 text-lg max-w-2xl">
+            <p className="text-navy-200 text-lg">
               Wholesale A2P messaging infrastructure for carriers, aggregators and platforms. Direct carrier connections across 200+ countries. 10DLC, TCPA and GDPR compliance built in.
             </p>
 

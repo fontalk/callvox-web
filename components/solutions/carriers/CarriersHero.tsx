@@ -36,7 +36,7 @@ export default function CarriersHero() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg text-navy-200 max-w-2xl leading-relaxed">
+          <p className="text-lg text-navy-200 leading-relaxed">
             We've been routing carrier traffic for 2 decades. We understand interconnect requirements, SLA expectations, and NOC culture. No learning curve.
           </p>
 

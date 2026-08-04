@@ -36,10 +36,10 @@ export default function UseCasesAirtime() {
           transition={{ delay: 0.1 }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-DEFAULT text-balance mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy-DEFAULT mb-4">
             The infrastructure behind the world's remittance corridors.
           </h2>
-          <p className="text-lg text-navy-600 max-w-3xl">
+          <p className="text-lg text-navy-600">
             Diaspora communities send airtime, not just cash. It's the most direct form of mobile support — and the fastest growing.
           </p>
         </motion.div>

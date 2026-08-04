@@ -54,7 +54,7 @@ export default function DIDsHero() {
 
           <motion.p
             variants={itemVariants}
-            className="text-navy-200 text-lg max-w-2xl mb-10 leading-relaxed"
+            className="text-navy-200 text-lg mb-10 leading-relaxed"
           >
             Wholesale DID numbers for carriers, UCaaS platforms, resellers and enterprises. Local, national, toll-free, mobile, and UIFN numbers. Voice + SMS on the same number. Free porting.
           </motion.p>

@@ -43,7 +43,7 @@ export default function MVNOStack() {
           <h2 className="text-navy-DEFAULT font-bold mb-4" style={{ fontSize: 'clamp(28px, 4vw, 36px)' }}>
             Your entire wholesale stack. One vendor.
           </h2>
-          <p className="text-navy-600 text-lg max-w-2xl mx-auto">
+          <p className="text-navy-600 text-lg max-w-3xl mx-auto">
             MVNOs typically manage 3–5 vendor relationships for the services Callvox provides in one. One API. One invoice. One support contact.
           </p>
         </motion.div>

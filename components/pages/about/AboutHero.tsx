@@ -26,7 +26,7 @@ export default function AboutHero() {
             2 decades in the markets others treat as afterthoughts.
           </h1>
 
-          <p className="text-navy-200 text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-navy-200 text-lg leading-relaxed max-w-3xl mx-auto">
             Founded in 2007 as a voice-only wholesale carrier focused on Latin America, Africa, South Asia, and the Middle East. Today, a unified five-product platform — built for the corridors where wholesale telecom actually grows.
           </p>
         </motion.div>

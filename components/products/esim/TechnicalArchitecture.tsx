@@ -54,7 +54,7 @@ export function TechnicalArchitecture() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-DEFAULT mb-6">
             The eSIM stack, explained.
           </h2>
-          <p className="text-navy-600 text-lg max-w-2xl leading-relaxed">
+          <p className="text-navy-600 text-lg leading-relaxed">
             eSIM provisioning requires certified infrastructure at every layer. Callvox operates SM-DP+ (Subscription Manager Data Preparation+) infrastructure certified to GSMA SAS-SM standards.
           </p>
         </motion.div>

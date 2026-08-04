@@ -46,7 +46,7 @@ export default function DeliverabilitySection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-2xl"
+          className="max-w-3xl"
         >
           <h2 className="text-navy-DEFAULT font-semibold text-4xl mb-6">Delivery is the product.</h2>
           <p className="text-navy-600 text-lg leading-relaxed">

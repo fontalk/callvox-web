@@ -28,7 +28,7 @@ export default function DeveloperHero() {
               One API. Five services. Zero friction.
             </h1>
 
-            <p className="text-navy-200 text-lg leading-relaxed mb-12 max-w-xl">
+            <p className="text-navy-200 text-lg leading-relaxed mb-12">
               REST APIs for voice, SMS, airtime, eSIM and DIDs. SMPP for messaging. Sandbox access in under 5 minutes. No sales call required.
             </p>
 
