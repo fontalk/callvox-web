@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -58,10 +59,24 @@ export default function OperatorCoverageAirtime() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-center text-xs italic text-navy-300"
+          className="text-center text-xs italic text-navy-300 mb-4"
         >
           Full operator list available on request. AML/KYC daily limits apply as standard.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ delay: 0.7 }}
+          className="text-center"
+        >
+          <Link
+            href="/products/airtime/coverage"
+            className="text-cyan-DEFAULT text-sm font-semibold hover:opacity-80 transition-opacity"
+          >
+            See live vs. coming-soon status by country →
+          </Link>
+        </motion.div>
       </div>
     </section>
   )

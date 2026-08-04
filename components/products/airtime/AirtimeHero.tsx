@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight } from '@phosphor-icons/react'
 import { Button } from '@/components/callvox-ui/Button'
@@ -88,12 +89,16 @@ export default function AirtimeHero() {
           transition={{ delay: 0.5 }}
           className="flex gap-4 flex-wrap"
         >
-          <Button variant="white">
-            Get API Access
-          </Button>
-          <Button variant="ghost" className="text-white border-white hover:bg-white/10">
-            View Operator Coverage
-          </Button>
+          <Link href="/products/airtime/apply">
+            <Button variant="white">
+              Get API Access
+            </Button>
+          </Link>
+          <Link href="/products/airtime/coverage">
+            <Button variant="ghost" className="text-white border-white hover:bg-white/10">
+              View Operator Coverage
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

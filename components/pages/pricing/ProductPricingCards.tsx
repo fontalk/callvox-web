@@ -1,9 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, ChatCircle, DeviceMobile, SimCard, PhoneIncoming, CheckCircle, ArrowRight } from '@phosphor-icons/react';
+import { Phone, ChatCircle, DeviceMobile, SimCard, PhoneIncoming, CheckCircle, ArrowRight, type Icon } from '@phosphor-icons/react';
 
-const products = [
+interface ProductPricingCard {
+  icon: Icon;
+  name: string;
+  price: string;
+  unit: string;
+  showFrom: boolean;
+  href?: string;
+  features: string[];
+}
+
+const products: ProductPricingCard[] = [
   {
     icon: Phone,
     name: 'Voice',
@@ -31,9 +41,10 @@ const products = [
   {
     icon: DeviceMobile,
     name: 'Airtime',
-    price: '2–10%',
-    unit: 'discounts',
+    price: 'Tiered',
+    unit: 'by volume',
     showFrom: false,
+    href: '/products/airtime/pricing',
     features: [
       '800+ operators',
       '<3s delivery',
@@ -99,7 +110,7 @@ export default function ProductPricingCards() {
                   ))}
                 </ul>
 
-                <a href="#" className="text-cyan-DEFAULT font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                <a href={product.href ?? '#'} className="text-cyan-DEFAULT font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                   Get rates
                 </a>
               </motion.div>
